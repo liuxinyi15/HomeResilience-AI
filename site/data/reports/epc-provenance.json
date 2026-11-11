@@ -1,0 +1,305 @@
+{
+  "frozen_manifest_sha256": "5f3aac136d647bec16e1470851e40dde785580769bfb276bba40add5bf771c78",
+  "frozen_rules_sha256": "99f18606beb6037ea01708d533176ceae04e03e480360acb77be74551b3609ae",
+  "source_files": [
+    {
+      "name": "certificates-2008.csv",
+      "kind": "certificates",
+      "sha256": "a40aef7112b43415735f8370530c6f271a88a650f59fa971e55a2aef9e4cc943",
+      "rows": 691495,
+      "bytes": 592764928
+    },
+    {
+      "name": "certificates-2009.csv",
+      "kind": "certificates",
+      "sha256": "d40d7e8892bb23f1e413ba363ca67ea0401348eb5d3565b20ec73422ebd83afa",
+      "rows": 2124811,
+      "bytes": 1868375311
+    },
+    {
+      "name": "certificates-2010.csv",
+      "kind": "certificates",
+      "sha256": "89c8bb76cbcfb6261a07686322e29ef3e9eb45e13ceafde2c3e0bc8f8196d574",
+      "rows": 1687377,
+      "bytes": 1502113313
+    },
+    {
+      "name": "certificates-2011.csv",
+      "kind": "certificates",
+      "sha256": "2daff4a4ed809b4679bad0cd95e33584fe25bfb7c5442dd55a183bc160857309",
+      "rows": 1493404,
+      "bytes": 1340563746
+    },
+    {
+      "name": "certificates-2012.csv",
+      "kind": "certificates",
+      "sha256": "e1f1053baae78d4e60b71ed977164199c754b719c47984d2b5e8cfb45d39cc99",
+      "rows": 1467019,
+      "bytes": 1325061600
+    },
+    {
+      "name": "certificates-2013.csv",
+      "kind": "certificates",
+      "sha256": "90d291a9fcc964614822b9e3ca0bca435cbd5bd14ba5acc9ce837f62ea0137c0",
+      "rows": 2012043,
+      "bytes": 1841471191
+    },
+    {
+      "name": "certificates-2014.csv",
+      "kind": "certificates",
+      "sha256": "a2af9abff1a0f2c3edc268e41684b3ba2c5d217ac9a37918b0679e63b61d0d7d",
+      "rows": 2201382,
+      "bytes": 2020285563
+    },
+    {
+      "name": "certificates-2015.csv",
+      "kind": "certificates",
+      "sha256": "23dd6d674055ddddbedf58673472f441d15a3cd7e8f8d907f4473c0a26476c48",
+      "rows": 1778085,
+      "bytes": 1627437977
+    },
+    {
+      "name": "certificates-2016.csv",
+      "kind": "certificates",
+      "sha256": "1978d3348a2ca7bc3b42576d13a8a44651c8f9059e988a1c1bc301f26f67147d",
+      "rows": 1490879,
+      "bytes": 1362372559
+    },
+    {
+      "name": "certificates-2017.csv",
+      "kind": "certificates",
+      "sha256": "17d727de7904f4343d4fd3105cebcff8318f7ce59fec129aec4f721d048c6a25",
+      "rows": 1204992,
+      "bytes": 1098597777
+    },
+    {
+      "name": "certificates-2018.csv",
+      "kind": "certificates",
+      "sha256": "2aa19ad704a106d9034e47daa3323c4f2b73169166e4a4bb66aaa5060039a8aa",
+      "rows": 1383802,
+      "bytes": 1264494800
+    },
+    {
+      "name": "certificates-2019.csv",
+      "kind": "certificates",
+      "sha256": "c01f02f256ab9868295f43d7bbfe47cfb03a63f66fb0f1713155e92c49cbc6b1",
+      "rows": 1585205,
+      "bytes": 1450525548
+    },
+    {
+      "name": "certificates-2020.csv",
+      "kind": "certificates",
+      "sha256": "26af1b2d95b72f6fc4dfc810dcb680b19c92fbb3dcadc2b9a26725af3ed5fcca",
+      "rows": 1498898,
+      "bytes": 1378357628
+    },
+    {
+      "name": "certificates-2021.csv",
+      "kind": "certificates",
+      "sha256": "7babf5e4dd17bb9dab21fc3fc8c35ac2a3307b367afe412643d0e98264f522ca",
+      "rows": 1638704,
+      "bytes": 1504086984
+    },
+    {
+      "name": "certificates-2022.csv",
+      "kind": "certificates",
+      "sha256": "57906312947ede2ce1b49424aa7b0cf80022bd6fb6d4f716581f36425e1324e3",
+      "rows": 1744236,
+      "bytes": 1592076893
+    },
+    {
+      "name": "certificates-2023.csv",
+      "kind": "certificates",
+      "sha256": "16911936239ffe8da5a7ad59f063af05656c4c08d95c0f9b7d0373ae557e4778",
+      "rows": 1643670,
+      "bytes": 1505272912
+    },
+    {
+      "name": "certificates-2024.csv",
+      "kind": "certificates",
+      "sha256": "0ce2ca0c974dd28ddd334b25cf553fab4453d191e35dd3a9996d2ae488ccab97",
+      "rows": 1646503,
+      "bytes": 1507574820
+    },
+    {
+      "name": "certificates-2025.csv",
+      "kind": "certificates",
+      "sha256": "9146a0c1675a70363370eb552ab76857a695ef79770af9e07a0c6d367eec4046",
+      "rows": 1744420,
+      "bytes": 1549619702
+    },
+    {
+      "name": "certificates-2026.csv",
+      "kind": "certificates",
+      "sha256": "0af1f5ff8d9d6d1fb9ad723d143d0c20365722a57f7d57a96a47e2061b77ba20",
+      "rows": 1492527,
+      "bytes": 1279339813
+    },
+    {
+      "name": "recommendations-2008.csv",
+      "kind": "recommendations",
+      "sha256": "e3909d8bb0bb34d787c6759ae5e4479bf8326a904312b9045ff7f7b834496420",
+      "rows": 2672598,
+      "bytes": 1951647547
+    },
+    {
+      "name": "recommendations-2009.csv",
+      "kind": "recommendations",
+      "sha256": "710990686e673328c9124c0e7db32960e695b7e9b85aec64cfe613af56a5a051",
+      "rows": 8240327,
+      "bytes": 6026379992
+    },
+    {
+      "name": "recommendations-2010.csv",
+      "kind": "recommendations",
+      "sha256": "39abf8e9243d0f739f4b8acd32436fd5d022616167c90cfc48d9aa8b59aeeadb",
+      "rows": 6629450,
+      "bytes": 5017917876
+    },
+    {
+      "name": "recommendations-2011.csv",
+      "kind": "recommendations",
+      "sha256": "9f207b755aa5b9d84bce1f327e3c783e6c231fe1882f6587b909e1c3dd497eb8",
+      "rows": 5691807,
+      "bytes": 3815707165
+    },
+    {
+      "name": "recommendations-2012.csv",
+      "kind": "recommendations",
+      "sha256": "2e0fdf45086d82133989e783a6f2c0a424ed4edcc62570051b4b656210235afb",
+      "rows": 6374181,
+      "bytes": 3853747004
+    },
+    {
+      "name": "recommendations-2013.csv",
+      "kind": "recommendations",
+      "sha256": "2a02313f3fb9e9662ac9359ee8ec206e0ff3c51d2a519e2a349200acb6fea06b",
+      "rows": 9732884,
+      "bytes": 5949700707
+    },
+    {
+      "name": "recommendations-2014.csv",
+      "kind": "recommendations",
+      "sha256": "8a35b6e1b3e8de5e1bcec1c02b29b977944e49995f054a1fb7e533fc894d40ec",
+      "rows": 10792987,
+      "bytes": 6685456385
+    },
+    {
+      "name": "recommendations-2015.csv",
+      "kind": "recommendations",
+      "sha256": "272062726c0bfa79a36b5ad7191a63cfaf04b853d8b68248bef5646229b198ba",
+      "rows": 8038741,
+      "bytes": 4699122909
+    },
+    {
+      "name": "recommendations-2016.csv",
+      "kind": "recommendations",
+      "sha256": "3196dbca3f49682ba7186b4cbffdbfca2e98580b4459722903c4c23b08c45b48",
+      "rows": 6473563,
+      "bytes": 3774624784
+    },
+    {
+      "name": "recommendations-2017.csv",
+      "kind": "recommendations",
+      "sha256": "7b26ce008910b4f87fbe4fa44db183579a78d73a0e0e2b9f24267a1f943ef4f1",
+      "rows": 4636495,
+      "bytes": 2653385206
+    },
+    {
+      "name": "recommendations-2018.csv",
+      "kind": "recommendations",
+      "sha256": "4c8f2155b87f5258b421ff64a398c420d2790e2324f6acedbc4e09151b61b23c",
+      "rows": 5058823,
+      "bytes": 2934823872
+    },
+    {
+      "name": "recommendations-2019.csv",
+      "kind": "recommendations",
+      "sha256": "07ec1cc9c387f1787e6121a60717f8657edb4aede96ef5c4250314331e057770",
+      "rows": 5504613,
+      "bytes": 3227155137
+    },
+    {
+      "name": "recommendations-2020.csv",
+      "kind": "recommendations",
+      "sha256": "e40a4a83c36658a707a1d1c98c993c00a83f10a6921acd1ec2a668d3cbd0ac5b",
+      "rows": 5175920,
+      "bytes": 3044664516
+    },
+    {
+      "name": "recommendations-2021.csv",
+      "kind": "recommendations",
+      "sha256": "ec87bf9c99ae47a97718c6dd1f43c37a062ed7694c68df035a93ed6bee6e977c",
+      "rows": 5368126,
+      "bytes": 3152505131
+    },
+    {
+      "name": "recommendations-2022.csv",
+      "kind": "recommendations",
+      "sha256": "9550f036782f52189a656e0a34418134c4761928364c964974b59f86f3082435",
+      "rows": 5469556,
+      "bytes": 3180766652
+    },
+    {
+      "name": "recommendations-2023.csv",
+      "kind": "recommendations",
+      "sha256": "5047c77d6cb42b0d0f477321dc4301633b67a5841d7f9094d79162d22493f267",
+      "rows": 4951303,
+      "bytes": 2864892580
+    },
+    {
+      "name": "recommendations-2024.csv",
+      "kind": "recommendations",
+      "sha256": "4dd4cc5a7053ba914976396b6bc2fc0ba0bb083adf2dfab62fac7a5c0c39b4f3",
+      "rows": 4866898,
+      "bytes": 2806249219
+    },
+    {
+      "name": "recommendations-2025.csv",
+      "kind": "recommendations",
+      "sha256": "480bc45ad73c8fcb55bf4946e4b38ef8dd11ecd1cfa3233db729248e886f757b",
+      "rows": 4428351,
+      "bytes": 2617084086
+    },
+    {
+      "name": "recommendations-2026.csv",
+      "kind": "recommendations",
+      "sha256": "10953d380470ad394650eadf01359036c4ada7eaae723dd9836bfac00a5f6d5b",
+      "rows": 3184948,
+      "bytes": 1957434968
+    }
+  ],
+  "cohort_partitions": {
+    "development": {
+      "sha256": "e06f2c83121b6f088f203828fbf1d000f7ca318452b444e1dc294e82eb1c7682",
+      "properties": 4668
+    },
+    "validation": {
+      "sha256": "51379cdb4632293997a92078c19b3a0a9252e2969843287ab71a0c32f44224f1",
+      "properties": 1588
+    },
+    "property_holdout": {
+      "sha256": "c19584d81a0d2fa8c1fb10d559c2414bafb0a896d9c534de099ff9fc1158416b",
+      "properties": 1580
+    },
+    "region_holdout": {
+      "sha256": "b03dc00b28f3b2e60b24bbc2967d83a01682455b4c89f33d328f2e39500a8e40",
+      "properties": 923
+    },
+    "temporal_holdout": {
+      "sha256": "0a5b59ea733d50461c5c738e795ce43bb4d9fb3b7ce531007e453383c8d6a286",
+      "properties": 1352
+    },
+    "geography_holdout": {
+      "sha256": "5d2cb49ecb55d76a0aad409e509a20e132414779248ef5e5c2feccef6eb64efd",
+      "properties": 11
+    }
+  },
+  "leakage": {
+    "property_overlap": 0,
+    "certificate_overlap": 0,
+    "heldout_region_in_development": 0,
+    "unresolved_geography_in_development": 0,
+    "temporal_latest_in_development": 0
+  }
+}

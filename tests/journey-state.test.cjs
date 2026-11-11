@@ -1,0 +1,92 @@
+const assert = require('node:assert/strict');
+const test = require('node:test');
+const Journey = require('../site/journey-state.js');
+
+test('journey progress derives from context, while completed records survive edits and reloads', () => {
+ const home=Journey.fresh();
+ assert.equal(Journey.status(home,'old').property,'Not started');
+ home.assessment={signature:'house'};
+ home.understood='house';
+ home.planned='old';
+ assert.equal(Journey.status(home,'old',true).comparison,'Ready');
+ home.selection={key:'plan',context:'old'};
+ home.funding={key:'funding',selection:'plan',phases:[{added:['loft']}]};
+ home.scope={selection:'plan',ids:['valve'],fundingKey:'funding'};
+ home.records.valve={category:'Flood',installation:{date:'2026-11-01'},evidence:[{type:'completion'},{type:'invoice'}],
+  verified:{date:'2026-11-02'},maintenance:{source:'Document',due:'2026-11-12'}};
+ assert.equal(Journey.status(home,'old').funding,'Complete');
+ assert.equal(Journey.status(home,'old').action,'Complete');
+ assert.equal(Journey.status(home,'old').verify,'Complete');
+ const updated=Journey.status(home,'new',true,'2026-11-09');
+ assert.equal(updated.property,'Complete');
+ assert.equal(updated.comparison,'Outdated');
+ assert.equal(updated.funding,'Outdated');
+ assert.equal(updated.passport,'Record created');
+ assert.equal(updated.verify,'Complete');
+ assert.deepEqual(Journey.reportedCompleted(home),['valve']);
+ Journey.invalidate(home,'new');
+ assert.equal(Journey.selected(home,'old'),null);
+ Journey.archive(home);
+ assert.ok(home.history[0].funding.outdated);
+ assert.equal(Journey.status(home,'new',false).property,'Outdated');
+ const entries=new Map(), storage={getItem:k=>entries.get(k),setItem:(k,v)=>entries.set(k,v),removeItem:k=>entries.delete(k)};
+ Journey.session.homes={home};Journey.session.home='home';Journey.session.save=true;
+ assert.ok(Journey.persist(storage));
+ Journey.session.homes={};
+ Journey.load(storage);
+ assert.equal(Journey.recordStatus(Journey.current().records.valve),'Verified');
+ assert.equal(Journey.current().funding.phases[0].added[0],'loft');
+ assert.equal(Journey.maintenanceStatus(Journey.current().records.valve,'2026-11-09'),'Upcoming');
+ Journey.session.save=false;Journey.persist(storage);
+ assert.equal(entries.size,0);
+});
+test('quote comparison reports unknown scope, configurations and origins separately', () => {
+ const scope=Object.fromEntries(Object.keys(Journey.scopeFields).map(k=>[k,'included']));
+ const a={configuration:'first',scope,origin:'contractor',total:3100,validUntil:'2027-01-01'};
+ const b={...a,total:2350,configuration:'second',scope:{...scope,vat:'unknown',survey:'unknown',removal:'excluded'}};
+ const differences=Journey.compareQuotes(a,b,'2026-11-09');
+ assert.equal(differences.delta,-750);
+ assert.deepEqual(differences.gaps,['VAT scope','Survey scope']);
+ assert.deepEqual(differences.different,['Removal and disposal','configuration']);
+ assert.equal(differences.comparable,false);
+ assert.equal(Journey.compareQuotes(a,{...a,total:3100},'2026-11-09').comparable,true);
+ assert.equal(Journey.compareQuotes(a,{...a,origin:'planning allowance'},'2026-11-09').comparable,false);
+ assert.deepEqual(a.scope,scope);
+ const survey={...a,configuration:null,scope:{vat:'included',survey:'included'}};
+ assert.equal(Journey.compareQuotes(survey,survey,'2026-11-09',{keys:['vat','survey'],configuration:false}).comparable,true);
+});
+test('stage progression is add-only and every intermediate scope preserves dependencies', () => {
+ const measures=[{id:'survey',requires:[],cost_base:600},{id:'door',requires:['survey'],cost_base:2600,category:'Flood'},
+  {id:'retrofit',requires:[],cost_base:400},{id:'loft',requires:['retrofit'],cost_base:2000}];
+ const phases=Journey.stages(measures,800,'base');
+ assert.deepEqual(phases.map(p=>p.cost),[600,3200,5600]);
+ phases.forEach((p,i)=>{
+  assert.equal(p.kind,'add_only');
+  assert.ok(measures.filter(m=>p.ids.includes(m.id)).every(m=>m.requires.every(id=>p.ids.includes(id))));
+  if(i) assert.ok(phases[i-1].ids.every(id=>p.ids.includes(id)));
+ });
+ assert.deepEqual(Journey.stages([measures[1]],3000,'base',['survey'])[0].ids,['door']);
+ const noInterest=Journey.finance(8900,2000,60,0);
+ assert.deepEqual(noInterest,{principal:6900,monthly:115,total:6900});
+ const interest=Journey.finance(8900,2000,60,6);
+ assert.ok(interest.monthly>115 && interest.total>6900);
+});
+test('verification and maintenance require declared evidence and documented dates', () => {
+ const record={category:'Flood',configuration:'door',progress:'Planned',evidence:[]};
+ assert.equal(Journey.recordStatus(record),'Planned');
+ record.installation={configuration:'door'};
+ assert.equal(Journey.recordStatus(record),'Installed');
+ record.reviewed=true;
+ assert.equal(Journey.recordStatus(record),'Verification incomplete');
+ record.evidence=[{type:'completion'},{type:'invoice'}];
+ assert.deepEqual(Journey.verificationGaps(record),['certificate']);
+ record.evidence.push({type:'certificate'});
+ assert.equal(Journey.recordStatus(record),'Verification incomplete');
+ record.verified={date:'2026-11-01'};
+ assert.equal(Journey.recordStatus(record),'Verified');
+ assert.equal(Journey.maintenanceStatus(record,'2026-11-09'),'No schedule available');
+ record.maintenance={source:'Handover guide',due:'2026-11-09'};
+ assert.equal(Journey.maintenanceStatus(record,'2026-11-08'),'Upcoming');
+ assert.equal(Journey.maintenanceStatus(record,'2026-11-09'),'Due');
+ assert.equal(Journey.maintenanceStatus(record,'2026-11-10'),'Overdue');
+});

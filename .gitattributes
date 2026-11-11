@@ -1,0 +1,5 @@
+site/runtime/** linguist-vendored
+*.gz binary
+*.png binary
+*.wasm binary
+*.zip binary

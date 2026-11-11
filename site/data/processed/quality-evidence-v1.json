@@ -1,0 +1,73 @@
+{
+  "version": "quality-evidence-v1",
+  "sources": {
+    "clean-energy-insulation": {"name": "UK Government Clean Energy insulation guide", "url": "https://cleanenergy.campaign.gov.uk/insulation/", "retrieved": "2026-11-05"},
+    "est-loft": {"name": "Energy Saving Trust roof and loft insulation guide", "url": "https://energysavingtrust.org.uk/loft-conversions-and-energy-saving/", "retrieved": "2026-11-05"},
+    "est-cavity": {"name": "Energy Saving Trust cavity wall insulation guide", "url": "https://energysavingtrust.org.uk/advice/cavity-wall-insulation/", "retrieved": "2026-11-05"},
+    "est-solid": {"name": "Energy Saving Trust solid wall insulation guide", "url": "https://energysavingtrust.org.uk/advice/solid-wall-insulation?loc=england", "retrieved": "2026-11-05"},
+    "m3-airbrick-listing": {"name": "M3 Floodtec M3AFA product listing", "url": "https://www.m3floodtec.com/shop/brick-wall/anti-flood-airbrick", "retrieved": "2026-11-05"},
+    "m3-door-manual": {"name": "M3 Flood Defender Door user instructions, pp. 3, 7–8, 11", "url": "https://www.m3floodtec.com/assets/img/crunched/downloads/defender-door-instructions-a5-bs851188.pdf", "retrieved": "2026-11-05"},
+    "m3-barrier-manual": {"name": "M3 Flood Defender Barrier installation guide, Warranty", "url": "https://www.m3floodtec.com/assets/img/crunched/downloads/defender-barrier-installation-guide.pdf", "retrieved": "2026-11-05"}
+  },
+  "measure_details": {
+    "loft": {
+      "specification": "Published benchmark for loft or roof insulation in a typical gas-heated semi-detached EPC D home.",
+      "material": "Mineral wool is an option. Confirm actual type, depth and treated area.",
+      "installation_requirements": "Check moisture, ventilation, loft access, services and existing insulation before specifying depth.",
+      "indicative_cost": {"low_gbp": 400, "high_gbp": 1200, "scope": "Typical installed measure", "installation_included": true, "vat_included": null, "evidence_class": "published_modelled", "source_id": "clean-energy-insulation"},
+      "source_ids": ["clean-energy-insulation", "est-loft"],
+      "limitations": "Typical published benchmark. Scope and VAT of a property quote remain to be confirmed."
+    },
+    "cavity": {
+      "specification": "Cavity fill where existing construction is suitable.",
+      "material": "Choice depends on assessed exposure and wall condition.",
+      "installation_requirements": "Confirm cavity width, existing fill, defects, moisture and exposure before specifying work.",
+      "indicative_cost": {"low_gbp": 1000, "high_gbp": 3000, "scope": "Typical installed measure for a gas-heated semi-detached EPC D home", "installation_included": true, "vat_included": null, "evidence_class": "published_modelled", "source_id": "clean-energy-insulation"},
+      "source_ids": ["clean-energy-insulation", "est-cavity"],
+      "limitations": "Typical published benchmark. A qualified installer must confirm scope and suitability."
+    },
+    "wall": {
+      "specification": "Whole-home internal and external wall insulation are distinct specifications.",
+      "installation_requirements": "Survey moisture, junctions, ventilation, design and permissions. Check what making good is included.",
+      "indicative_cost": {"low_gbp": 12000, "high_gbp": 15000, "scope": "Typical internal (£12,000) and external (£15,000) installed options for a GB three-bedroom semi-detached house", "installation_included": true, "vat_included": null, "evidence_class": "published_modelled", "source_id": "est-solid"},
+      "source_ids": ["est-solid"],
+      "limitations": "Two different scopes. This reference is shown separately from the planner allowance and is not an uncertainty range for one quote."
+    }
+  },
+  "configuration_models": {
+    "m3-upvc-out": "M3FDUPVC",
+    "m3-timber-out": "M3FDTD",
+    "m3-type-e": "M3FDB",
+    "m3-airbrick-single": "M3AFA",
+    "kingsley-vent": "FRB-DWG-004",
+    "kingsley-door": "FRB-DWG-002"
+  },
+  "product_details": {
+    "m3-airbrick-single": {
+      "material": "Recycled polypropylene copolymer body, mesh and float (manufacturer specification).",
+      "installation_requirements": "Check ventilation provision and the aperture. Seal and point the surround correctly, with the unit in its specified orientation.",
+      "maintenance": "Provide access for inspection. The manufacturer requires mortar to cure before removal of the front face.",
+      "indicative_cost": {"low_gbp": 38, "high_gbp": 38, "scope": "Manufacturer web listing, supply per unit", "installation_included": false, "vat_included": null, "evidence_class": "observed", "source_id": "m3-airbrick-listing"},
+      "source_ids": ["m3-airbrick-listing"],
+      "limitations": "Displayed unit price at retrieval. VAT, delivery, quantity, fitting and final configuration must be confirmed."
+    },
+    "m3-upvc-out": {
+      "source_ids": ["m3-door-manual"],
+      "maintenance": "Manufacturer recommends monthly, annual and post-flood maintenance. Qualified service after 12 months applies to warranty conditions.",
+      "warranty": "Manufacturer states 2 years for the listed frame, panels and locking or gasket components. Service is required for lock and gasket cover. Some fittings and glazing have 1 year.",
+      "expected_lifetime": "Manufacturer expects up to 10 years for specified maintained components.",
+      "installation_requirements": "Confirm exact opening, frame and fixing design with the installer and commission locking and seals.",
+      "limitations": "Family-level manufacturer terms and design expectation. Confirm coverage for the exact quotation. Field reliability and service prices are unavailable."
+    },
+    "m3-timber-out": {
+      "copy_from": "m3-upvc-out"
+    },
+    "m3-type-e": {
+      "source_ids": ["m3-barrier-manual"],
+      "maintenance": "Manufacturer requires qualified service at 12 months to maintain component warranty. Confirm cleaning, storage and seal checks with the installer.",
+      "warranty": "Manufacturer states 2 years on board, seals, rails, fixings and brackets, subject to the required service.",
+      "installation_requirements": "Confirm Type E frame and opening dimensions, fixing substrate, seals, storage and someone able to deploy it.",
+      "limitations": "Manufacturer's family-level warranty. Confirm exact configuration, terms and service price."
+    }
+  }
+}

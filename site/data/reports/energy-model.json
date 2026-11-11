@@ -1,0 +1,1766 @@
+{
+  "raw_rows": 50000,
+  "duplicate_rows": 2,
+  "retained_rows": 49998,
+  "valid_target_rows": 37186,
+  "valid_flag_counts": {
+    "V": 37186,
+    "": 8658,
+    "E": 2316,
+    "L": 1015,
+    "O": 609,
+    "G": 214
+  },
+  "feature_missing": {
+    "property_type": 0,
+    "area_band": 0,
+    "age_band": 0,
+    "region": 0
+  },
+  "splits": {
+    "train": 22311,
+    "validation": 3718,
+    "calibration": 3719,
+    "test": 7438
+  },
+  "selected": "hist_gradient_boosting",
+  "models": {
+    "median": {
+      "validation": {
+        "n": 3718,
+        "mae_kwh": 4908.23,
+        "rmse_kwh": 6735.362,
+        "r2": -0.03214
+      },
+      "fit_seconds": 0.002,
+      "test": {
+        "n": 7438,
+        "mae_kwh": 4875.289,
+        "rmse_kwh": 6808.505,
+        "r2": -0.03031
+      }
+    },
+    "ridge": {
+      "validation": {
+        "n": 3718,
+        "mae_kwh": 4113.646,
+        "rmse_kwh": 5557.603,
+        "r2": 0.29726
+      },
+      "fit_seconds": 0.013,
+      "test": {
+        "n": 7438,
+        "mae_kwh": 4107.679,
+        "rmse_kwh": 5611.31,
+        "r2": 0.30017
+      }
+    },
+    "hist_gradient_boosting": {
+      "validation": {
+        "n": 3718,
+        "mae_kwh": 4064.961,
+        "rmse_kwh": 5513.261,
+        "r2": 0.30843
+      },
+      "fit_seconds": 0.207,
+      "test": {
+        "n": 7438,
+        "mae_kwh": 4076.185,
+        "rmse_kwh": 5570.143,
+        "r2": 0.3104
+      }
+    },
+    "catboost": {
+      "validation": {
+        "n": 3718,
+        "mae_kwh": 4066.106,
+        "rmse_kwh": 5513.365,
+        "r2": 0.30841
+      },
+      "fit_seconds": 0.982,
+      "test": {
+        "n": 7438,
+        "mae_kwh": 4078.717,
+        "rmse_kwh": 5566.381,
+        "r2": 0.31133
+      }
+    },
+    "lightgbm": {
+      "validation": {
+        "n": 3718,
+        "mae_kwh": 4065.983,
+        "rmse_kwh": 5508.563,
+        "r2": 0.30961
+      },
+      "fit_seconds": 0.135,
+      "test": {
+        "n": 7438,
+        "mae_kwh": 4073.297,
+        "rmse_kwh": 5563.721,
+        "r2": 0.31199
+      }
+    }
+  },
+  "optional_model_issues": {},
+  "interval": {
+    "method": "Split conformal absolute residual interval, marginal 90% target coverage",
+    "calibration_n": 3719,
+    "radius_kwh": 8155.884,
+    "test_coverage": 0.89473,
+    "mean_width_kwh": 15876.768,
+    "limitation": "Marginal coverage under exchangeability; not a guarantee for a particular home or under shift."
+  },
+  "regional_test": {
+    "E12000001": {
+      "n": 381,
+      "mae_kwh": 4050.279,
+      "rmse_kwh": 5156.773,
+      "r2": 0.15182
+    },
+    "E12000002": {
+      "n": 1045,
+      "mae_kwh": 4105.878,
+      "rmse_kwh": 5645.357,
+      "r2": 0.23776
+    },
+    "E12000003": {
+      "n": 741,
+      "mae_kwh": 4227.427,
+      "rmse_kwh": 5914.761,
+      "r2": 0.24911
+    },
+    "E12000004": {
+      "n": 659,
+      "mae_kwh": 4076.528,
+      "rmse_kwh": 5591.637,
+      "r2": 0.2947
+    },
+    "E12000005": {
+      "n": 778,
+      "mae_kwh": 4022.629,
+      "rmse_kwh": 5481.851,
+      "r2": 0.24592
+    },
+    "E12000006": {
+      "n": 761,
+      "mae_kwh": 3826.037,
+      "rmse_kwh": 5177.068,
+      "r2": 0.36981
+    },
+    "E12000007": {
+      "n": 909,
+      "mae_kwh": 4618.537,
+      "rmse_kwh": 6159.45,
+      "r2": 0.35791
+    },
+    "E12000008": {
+      "n": 1173,
+      "mae_kwh": 3931.586,
+      "rmse_kwh": 5405.787,
+      "r2": 0.37934
+    },
+    "E12000009": {
+      "n": 635,
+      "mae_kwh": 3561.213,
+      "rmse_kwh": 5018.149,
+      "r2": 0.35129
+    },
+    "W92000004": {
+      "n": 356,
+      "mae_kwh": 4363.263,
+      "rmse_kwh": 5873.317,
+      "r2": 0.19394
+    }
+  },
+  "shifted_year_diagnostics": {
+    "2023": {
+      "n": 7095,
+      "mae_kwh": 4037.039,
+      "rmse_kwh": 5512.828,
+      "r2": 0.30509
+    },
+    "2021": {
+      "n": 6857,
+      "mae_kwh": 4371.935,
+      "rmse_kwh": 6126.763,
+      "r2": 0.27723
+    }
+  },
+  "yorkshire_unseen_region_diagnostic": {
+    "n": 741,
+    "mae_kwh": 4129.306,
+    "rmse_kwh": 5885.346,
+    "r2": 0.25656
+  },
+  "exclusions": [
+    "No historical consumption predictors",
+    "No consumption-derived MAIN_HEAT_FUEL predictor",
+    "No undated latest EPC predictor",
+    "No installation flags/dates as consumption predictors",
+    "No income, tax or deprivation proxies",
+    "No random splitting of annual observations across households"
+  ],
+  "interpretation": "Retrospective 2024 population-conditional expectation, not a future bill or causal retrofit prediction. Property metadata reflects the 2025 stock; renovations and survivorship may bias historic alignment.",
+  "causal_viability": {
+    "treatment_audit": {
+      "LI_FLAG": {
+        "installations_2023": 43,
+        "valid_gas_before_after": 35,
+        "all_year_counts": {
+          "2000": 7,
+          "2001": 31,
+          "2002": 80,
+          "2003": 163,
+          "2004": 221,
+          "2005": 335,
+          "2006": 500,
+          "2007": 423,
+          "2008": 830,
+          "2009": 805,
+          "2010": 697,
+          "2011": 949,
+          "2012": 1498,
+          "2013": 145,
+          "2014": 213,
+          "2015": 73,
+          "2016": 23,
+          "2017": 13,
+          "2018": 11,
+          "2019": 7,
+          "2020": 11,
+          "2021": 24,
+          "2022": 12,
+          "2023": 43,
+          "2024": 66
+        }
+      },
+      "CWI_FLAG": {
+        "installations_2023": 16,
+        "valid_gas_before_after": 15,
+        "all_year_counts": {
+          "2000": 164,
+          "2001": 254,
+          "2002": 238,
+          "2003": 276,
+          "2004": 336,
+          "2005": 375,
+          "2006": 652,
+          "2007": 423,
+          "2008": 641,
+          "2009": 759,
+          "2010": 546,
+          "2011": 669,
+          "2012": 752,
+          "2013": 157,
+          "2014": 384,
+          "2015": 166,
+          "2016": 78,
+          "2017": 50,
+          "2018": 66,
+          "2019": 39,
+          "2020": 25,
+          "2021": 43,
+          "2022": 29,
+          "2023": 16,
+          "2024": 26
+        }
+      },
+      "PV_FLAG": {
+        "installations_2023": 98,
+        "valid_gas_before_after": 66,
+        "all_year_counts": {
+          "2010": 6,
+          "2011": 98,
+          "2012": 57,
+          "2013": 36,
+          "2014": 67,
+          "2015": 121,
+          "2016": 43,
+          "2017": 34,
+          "2018": 23,
+          "2019": 24,
+          "2020": 14,
+          "2021": 24,
+          "2022": 45,
+          "2023": 98,
+          "2024": 110
+        }
+      }
+    },
+    "decision": "Use official NEED impact estimates, not a locally claimed causal effect",
+    "reasons": [
+      "Public installation flags record government schemes, not all private works; zero is not untreated.",
+      "Dates are latest recorded installation; prior interventions and treatment histories are incomplete.",
+      "Occupancy, income, household changes and treatment assignment are not observed; parallel trends/exchangeability cannot be established.",
+      "Current EPC and property attributes are undated/post-treatment. Matching or heterogeneous causal effects would be confounded."
+    ]
+  },
+  "research": {
+    "selection": {
+      "A": "A_reproduced.joblib",
+      "B": "B_detail__blend_30",
+      "C": "C_gas_history__elasticnet__persistence_blend_0.5",
+      "C_group": "gas_history",
+      "C_artifact": "C_selected_refit.joblib",
+      "C_r2_champion": "C_gas_history__elasticnet__persistence_blend_0.75",
+      "property_candidates": [
+        "A_original",
+        "B_core__ridge",
+        "B_core__elasticnet",
+        "B_core__hist_mean",
+        "B_core__hist_median",
+        "B_core__lightgbm_mean",
+        "B_core__lightgbm_l1",
+        "B_core__extra_trees",
+        "B_core__catboost",
+        "B_core__hist_log",
+        "B_core__ridge_log",
+        "B_detail__ridge",
+        "B_detail__elasticnet",
+        "B_detail__hist_mean",
+        "B_detail__hist_median",
+        "B_detail__lightgbm_mean",
+        "B_detail__lightgbm_l1",
+        "B_detail__extra_trees",
+        "B_detail__catboost",
+        "B_detail__hist_log",
+        "B_detail__ridge_log",
+        "B_detail_interactions__ridge",
+        "B_detail_interactions__hist_mean",
+        "B_detail_interactions__ridge_log",
+        "B_core__blend_24",
+        "B_core__blend_25",
+        "B_core__blend_26",
+        "B_core__blend_27",
+        "B_detail__blend_28",
+        "B_detail__blend_29",
+        "B_detail__blend_30",
+        "B_detail__blend_31"
+      ],
+      "history_candidates": [
+        "C_lag1__ridge",
+        "C_lag1__hist_mean",
+        "C_lag1__extra_trees",
+        "C_lag1__catboost",
+        "C_lag1__hist_log",
+        "C_lag1__persistence",
+        "C_gas_history__ridge",
+        "C_gas_history__elasticnet",
+        "C_gas_history__hist_mean",
+        "C_gas_history__hist_median",
+        "C_gas_history__lightgbm_mean",
+        "C_gas_history__lightgbm_l1",
+        "C_gas_history__extra_trees",
+        "C_gas_history__catboost",
+        "C_gas_history__hist_log",
+        "C_gas_electric__ridge",
+        "C_gas_electric__hist_mean",
+        "C_gas_electric__lightgbm_mean",
+        "C_gas_electric__catboost",
+        "C_gas_electric__hist_log",
+        "C_gas_history__elasticnet__persistence_blend_0.25",
+        "C_gas_history__elasticnet__persistence_blend_0.5",
+        "C_gas_history__elasticnet__persistence_blend_0.75",
+        "C_gas_electric__ridge__persistence_blend_0.25",
+        "C_gas_electric__ridge__persistence_blend_0.5",
+        "C_gas_electric__ridge__persistence_blend_0.75"
+      ],
+      "selection_basis": "Fresh development validation only; A legacy validation reproduction separate; old reported test never queried",
+      "final_policy": "Property deployment challenger: validation Pareto improvement in both MAE and R² over A, then lowest MAE among feasible candidates. History selection: validation Pareto/MAE versus persistence and comparisons restricted to its information cohort. Final deployment requires improvement on the fresh final set and paired group-bootstrap evidence for MAE, feature availability, interval coverage and subgroup checks.",
+      "B_default": "B_core__blend_26",
+      "B_r2_champion": "B_detail_interactions__hist_mean",
+      "B_mae_champion": "B_detail__hist_median",
+      "deployment_context": "B_default uses the existing four inputs, with pooled terrace type. B is a richer reported-subtype experiment; no silent provision of true subtype for default inference. Optional subtype deployment requires its own predeclared improvement gate.",
+      "deployment_gates": {
+        "default": "Both final MAE and R² improve over A; paired property-group bootstrap MAE gain 95% CI strictly positive; required inputs unchanged. Report every subgroup, and retain baseline for unsupported cells.",
+        "detail": "Optional detail model must improve final MAE and R² over default for terrace rows with reported subtype; paired-group MAE CI strictly positive. Otherwise keep detail as research only.",
+        "history": "Separate optional source-year scenario. C must improve both final MAE and R² over persistence on the identical history-eligible cohort, with positive paired-group MAE gain CI. Require matching weather-corrected historical inputs; never relabel this as property-only performance."
+      }
+    },
+    "results": {
+      "A": {
+        "candidate": "A_original",
+        "validation": {
+          "n": 29580,
+          "mae": 4037.4895955048123,
+          "rmse": 5483.789024453354,
+          "r2": 0.3193202946464513
+        },
+        "final": {
+          "n": 22163,
+          "mae": 4052.6266914913576,
+          "rmse": 5525.345662750661,
+          "r2": 0.3103205214691195
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 8410.805349135311,
+          "coverage": 0.9005098587736318,
+          "mean_width_kwh": 16305.557224431363,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1979,
+              "mae": 4053.2413641336707,
+              "rmse": 5298.137839768727,
+              "r2": 0.23060084344560683,
+              "interval_coverage": 0.9130874178878221
+            },
+            "Detached": {
+              "n": 3572,
+              "mae": 4752.496783961829,
+              "rmse": 6501.384748217888,
+              "r2": 0.3191779611306731,
+              "interval_coverage": 0.841545352743561
+            },
+            "End terrace": {
+              "n": 2161,
+              "mae": 3872.556989617518,
+              "rmse": 5332.111326950965,
+              "r2": 0.21186165905323495,
+              "interval_coverage": 0.9079130032392411
+            },
+            "Flat": {
+              "n": 3084,
+              "mae": 3423.8886189183618,
+              "rmse": 4899.986168820687,
+              "r2": 0.1054026276143547,
+              "interval_coverage": 0.9422827496757458
+            },
+            "Mid terrace": {
+              "n": 4844,
+              "mae": 4081.6684021281094,
+              "rmse": 5511.119063675473,
+              "r2": 0.16743260103611546,
+              "interval_coverage": 0.9077208918249381
+            },
+            "Semi detached": {
+              "n": 6523,
+              "mae": 4004.5396744403683,
+              "rmse": 5361.112061048047,
+              "r2": 0.22632019107587786,
+              "interval_coverage": 0.901425724359957
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1125,
+              "mae": 4109.9381562799035,
+              "rmse": 5670.324907308906,
+              "r2": 0.2318486056109681,
+              "interval_coverage": 0.8933333333333333
+            },
+            "E12000002": {
+              "n": 3138,
+              "mae": 3895.8451167137905,
+              "rmse": 5241.781642739781,
+              "r2": 0.2457986951461002,
+              "interval_coverage": 0.9117272147864882
+            },
+            "E12000003": {
+              "n": 2230,
+              "mae": 4277.320585953135,
+              "rmse": 5779.261809782664,
+              "r2": 0.25735111618828765,
+              "interval_coverage": 0.8928251121076233
+            },
+            "E12000004": {
+              "n": 1957,
+              "mae": 4100.914342363567,
+              "rmse": 5660.680318496243,
+              "r2": 0.2168480356175685,
+              "interval_coverage": 0.8972917731221257
+            },
+            "E12000005": {
+              "n": 2330,
+              "mae": 4000.787064034533,
+              "rmse": 5461.39473722859,
+              "r2": 0.2609027221052098,
+              "interval_coverage": 0.9072961373390558
+            },
+            "E12000006": {
+              "n": 2264,
+              "mae": 3907.255916221612,
+              "rmse": 5267.0273274308165,
+              "r2": 0.36998420189907133,
+              "interval_coverage": 0.9041519434628975
+            },
+            "E12000007": {
+              "n": 2647,
+              "mae": 4701.299377043141,
+              "rmse": 6396.521909331129,
+              "r2": 0.33294290030582807,
+              "interval_coverage": 0.8530411786928599
+            },
+            "E12000008": {
+              "n": 3407,
+              "mae": 4021.3402620843094,
+              "rmse": 5512.009983542947,
+              "r2": 0.4025358821225973,
+              "interval_coverage": 0.9013795127678309
+            },
+            "E12000009": {
+              "n": 1933,
+              "mae": 3513.4650762628917,
+              "rmse": 4683.339946716988,
+              "r2": 0.3064243101200772,
+              "interval_coverage": 0.9363683393688567
+            },
+            "W92000004": {
+              "n": 1132,
+              "mae": 3799.623424807781,
+              "rmse": 5192.797221124093,
+              "r2": 0.20599300433090362,
+              "interval_coverage": 0.9231448763250883
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2162,
+              "mae": 3049.167640318236,
+              "rmse": 4380.349769972962,
+              "r2": 0.04710624573601996,
+              "interval_coverage": 0.9569842738205365
+            },
+            "2": {
+              "n": 11764,
+              "mae": 3684.043090164228,
+              "rmse": 4907.667762979316,
+              "r2": 0.09025922309593182,
+              "interval_coverage": 0.9326759605576335
+            },
+            "3": {
+              "n": 6538,
+              "mae": 4419.477837904303,
+              "rmse": 5896.63311757619,
+              "r2": 0.12243062297555207,
+              "interval_coverage": 0.8716732945855001
+            },
+            "4": {
+              "n": 1214,
+              "mae": 5800.66456318686,
+              "rmse": 7783.312960940429,
+              "r2": 0.1287924616354712,
+              "interval_coverage": 0.7652388797364086
+            },
+            "5": {
+              "n": 485,
+              "mae": 8145.214698011916,
+              "rmse": 10247.482164565534,
+              "r2": 0.09680454034528685,
+              "interval_coverage": 0.5958762886597938
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 5170,
+              "mae": 4922.383549550714,
+              "rmse": 6681.181466040577,
+              "r2": 0.2632329161822592,
+              "interval_coverage": 0.8462282398452611
+            },
+            "2": {
+              "n": 9282,
+              "mae": 4075.4845190335195,
+              "rmse": 5422.870248644537,
+              "r2": 0.2696843866505706,
+              "interval_coverage": 0.8982977806507219
+            },
+            "3": {
+              "n": 4537,
+              "mae": 3556.9846525208864,
+              "rmse": 4802.472498632501,
+              "r2": 0.3276868487429374,
+              "interval_coverage": 0.9365219307912718
+            },
+            "4": {
+              "n": 3174,
+              "mae": 3277.5537927502774,
+              "rmse": 4636.905990287514,
+              "r2": 0.3666277118400355,
+              "interval_coverage": 0.9439193446754883
+            }
+          }
+        },
+        "scope": "Property-only cross-sectional 2024; current structural snapshot limitation shared with original",
+        "original_radius_interval": {
+          "target": 0.9,
+          "radius_kwh": 8155.884,
+          "coverage": 0.8930650182736994,
+          "mean_width_kwh": 15874.7894537589,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        }
+      },
+      "B_default": {
+        "candidate": "B_core__blend_26",
+        "validation": {
+          "n": 29580,
+          "mae": 3981.072962141259,
+          "rmse": 5469.57083028312,
+          "r2": 0.32284540829424213
+        },
+        "final": {
+          "n": 22163,
+          "mae": 4007.253411036595,
+          "rmse": 5516.790490485986,
+          "r2": 0.312454599305648
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 8341.652655601722,
+          "coverage": 0.8983440869918332,
+          "mean_width_kwh": 16063.202666064282,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1979,
+              "mae": 3988.1762127405573,
+              "rmse": 5258.238206568769,
+              "r2": 0.2421457110188019,
+              "interval_coverage": 0.9095502779181405
+            },
+            "Detached": {
+              "n": 3572,
+              "mae": 4741.594664762685,
+              "rmse": 6473.098698190829,
+              "r2": 0.32508927815289346,
+              "interval_coverage": 0.8387458006718925
+            },
+            "End terrace": {
+              "n": 2161,
+              "mae": 3850.2274149751624,
+              "rmse": 5356.710225283626,
+              "r2": 0.20457296832084004,
+              "interval_coverage": 0.9051365108745951
+            },
+            "Flat": {
+              "n": 3084,
+              "mae": 3337.7906495159923,
+              "rmse": 4908.223827742121,
+              "r2": 0.10239217724554772,
+              "interval_coverage": 0.940337224383917
+            },
+            "Mid terrace": {
+              "n": 4844,
+              "mae": 4013.0892942937553,
+              "rmse": 5488.756944374452,
+              "r2": 0.17417540546632815,
+              "interval_coverage": 0.9077208918249381
+            },
+            "Semi detached": {
+              "n": 6523,
+              "mae": 3975.116991082411,
+              "rmse": 5367.184200004306,
+              "r2": 0.2245666176632699,
+              "interval_coverage": 0.8985129541621953
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1125,
+              "mae": 4064.3165892806005,
+              "rmse": 5673.538984002458,
+              "r2": 0.2309775453985572,
+              "interval_coverage": 0.8933333333333333
+            },
+            "E12000002": {
+              "n": 3138,
+              "mae": 3892.2988566901463,
+              "rmse": 5252.527092731132,
+              "r2": 0.24270335862145687,
+              "interval_coverage": 0.9098151688973869
+            },
+            "E12000003": {
+              "n": 2230,
+              "mae": 4193.604047831028,
+              "rmse": 5765.398223044034,
+              "r2": 0.26090985034462066,
+              "interval_coverage": 0.8919282511210762
+            },
+            "E12000004": {
+              "n": 1957,
+              "mae": 4039.725868905092,
+              "rmse": 5618.973575322516,
+              "r2": 0.22834573196397512,
+              "interval_coverage": 0.8962698007153806
+            },
+            "E12000005": {
+              "n": 2330,
+              "mae": 3936.399174635572,
+              "rmse": 5448.829455898369,
+              "r2": 0.26429975974854925,
+              "interval_coverage": 0.8995708154506438
+            },
+            "E12000006": {
+              "n": 2264,
+              "mae": 3872.3124673812545,
+              "rmse": 5253.975515065121,
+              "r2": 0.37310271990644783,
+              "interval_coverage": 0.901060070671378
+            },
+            "E12000007": {
+              "n": 2647,
+              "mae": 4654.438430977052,
+              "rmse": 6384.847037972957,
+              "r2": 0.33537569075756524,
+              "interval_coverage": 0.8545523233849641
+            },
+            "E12000008": {
+              "n": 3407,
+              "mae": 3980.077492651799,
+              "rmse": 5512.688916763666,
+              "r2": 0.40238868963892827,
+              "interval_coverage": 0.9007924860581157
+            },
+            "E12000009": {
+              "n": 1933,
+              "mae": 3458.9449544806066,
+              "rmse": 4671.2734519352125,
+              "r2": 0.30999366287041086,
+              "interval_coverage": 0.9296430419037766
+            },
+            "W92000004": {
+              "n": 1132,
+              "mae": 3766.4294851018026,
+              "rmse": 5193.391497028587,
+              "r2": 0.2058112578825947,
+              "interval_coverage": 0.9213780918727915
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2162,
+              "mae": 2985.61486277879,
+              "rmse": 4387.261525684833,
+              "r2": 0.04409673035288908,
+              "interval_coverage": 0.9532839962997225
+            },
+            "2": {
+              "n": 11764,
+              "mae": 3636.3611846791428,
+              "rmse": 4909.477962268234,
+              "r2": 0.08958798131619616,
+              "interval_coverage": 0.930465827949677
+            },
+            "3": {
+              "n": 6538,
+              "mae": 4391.0909876423275,
+              "rmse": 5900.161303988527,
+              "r2": 0.12138014057739155,
+              "interval_coverage": 0.8698378709085347
+            },
+            "4": {
+              "n": 1214,
+              "mae": 5721.934025578707,
+              "rmse": 7681.671641428486,
+              "r2": 0.15139787349702127,
+              "interval_coverage": 0.757001647446458
+            },
+            "5": {
+              "n": 485,
+              "mae": 8091.390215778918,
+              "rmse": 10166.923462963869,
+              "r2": 0.11094933350797376,
+              "interval_coverage": 0.6123711340206186
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 5170,
+              "mae": 4862.802936135219,
+              "rmse": 6672.003251845929,
+              "r2": 0.2652557803659823,
+              "interval_coverage": 0.84642166344294
+            },
+            "2": {
+              "n": 9282,
+              "mae": 4037.6047342396114,
+              "rmse": 5415.852608419771,
+              "r2": 0.2715733405973533,
+              "interval_coverage": 0.8966817496229261
+            },
+            "3": {
+              "n": 4537,
+              "mae": 3509.5623781709983,
+              "rmse": 4784.058068786897,
+              "r2": 0.3328327514589803,
+              "interval_coverage": 0.9307912717654838
+            },
+            "4": {
+              "n": 3174,
+              "mae": 3236.337276626045,
+              "rmse": 4638.49820885929,
+              "r2": 0.3661926630097815,
+              "interval_coverage": 0.941398865784499
+            }
+          }
+        },
+        "scope": "Property-only cross-sectional 2024; current structural snapshot limitation shared with original"
+      },
+      "B_detail": {
+        "candidate": "B_detail__blend_30",
+        "validation": {
+          "n": 29580,
+          "mae": 3973.4889641434315,
+          "rmse": 5463.435274302062,
+          "r2": 0.3243637685937648
+        },
+        "final": {
+          "n": 22163,
+          "mae": 4001.412662125315,
+          "rmse": 5511.579858614658,
+          "r2": 0.31375276501236826
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 8362.294174720577,
+          "coverage": 0.899246491900916,
+          "mean_width_kwh": 16079.741719326781,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1979,
+              "mae": 3992.877934526044,
+              "rmse": 5267.287802873922,
+              "r2": 0.23953488330065742,
+              "interval_coverage": 0.9090449722081859
+            },
+            "Detached": {
+              "n": 3572,
+              "mae": 4741.104888358138,
+              "rmse": 6473.634663849115,
+              "r2": 0.3249775097521409,
+              "interval_coverage": 0.8387458006718925
+            },
+            "End terrace": {
+              "n": 2161,
+              "mae": 3839.0894751375245,
+              "rmse": 5243.147289424286,
+              "r2": 0.23794177513984593,
+              "interval_coverage": 0.9097639981490051
+            },
+            "Flat": {
+              "n": 3084,
+              "mae": 3335.3803730772156,
+              "rmse": 4910.047491881364,
+              "r2": 0.10172503599086113,
+              "interval_coverage": 0.9409857328145266
+            },
+            "Mid terrace": {
+              "n": 4844,
+              "mae": 3992.4848157565243,
+              "rmse": 5507.462630607232,
+              "r2": 0.1685369927450776,
+              "interval_coverage": 0.9079273327828241
+            },
+            "Semi detached": {
+              "n": 6523,
+              "mae": 3974.2441918096138,
+              "rmse": 5368.081487491373,
+              "r2": 0.22430732161304756,
+              "interval_coverage": 0.8997393837191476
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1125,
+              "mae": 4069.099764622935,
+              "rmse": 5682.303144608278,
+              "r2": 0.22859982596147188,
+              "interval_coverage": 0.8933333333333333
+            },
+            "E12000002": {
+              "n": 3138,
+              "mae": 3884.1707622787108,
+              "rmse": 5242.848829979504,
+              "r2": 0.24549156448071707,
+              "interval_coverage": 0.908540471637986
+            },
+            "E12000003": {
+              "n": 2230,
+              "mae": 4182.53388119674,
+              "rmse": 5759.964840095902,
+              "r2": 0.2623022494157702,
+              "interval_coverage": 0.8932735426008969
+            },
+            "E12000004": {
+              "n": 1957,
+              "mae": 4053.615700845082,
+              "rmse": 5636.342663265725,
+              "r2": 0.22356776107818577,
+              "interval_coverage": 0.8942258559018906
+            },
+            "E12000005": {
+              "n": 2330,
+              "mae": 3940.112091753754,
+              "rmse": 5456.874352866558,
+              "r2": 0.2621257141308647,
+              "interval_coverage": 0.9008583690987124
+            },
+            "E12000006": {
+              "n": 2264,
+              "mae": 3867.5734214323725,
+              "rmse": 5242.482556895348,
+              "r2": 0.3758423687342355,
+              "interval_coverage": 0.9019434628975265
+            },
+            "E12000007": {
+              "n": 2647,
+              "mae": 4624.459969022642,
+              "rmse": 6352.546879170719,
+              "r2": 0.34208318741427135,
+              "interval_coverage": 0.8609746883264072
+            },
+            "E12000008": {
+              "n": 3407,
+              "mae": 3974.5519258340137,
+              "rmse": 5509.4890240746145,
+              "r2": 0.4030822666165995,
+              "interval_coverage": 0.9002054593484003
+            },
+            "E12000009": {
+              "n": 1933,
+              "mae": 3452.5330541708313,
+              "rmse": 4664.508102629129,
+              "r2": 0.3119908713579591,
+              "interval_coverage": 0.9306777030522504
+            },
+            "W92000004": {
+              "n": 1132,
+              "mae": 3767.1638859440145,
+              "rmse": 5201.059952728439,
+              "r2": 0.20346416060598405,
+              "interval_coverage": 0.9240282685512368
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2162,
+              "mae": 2985.226452401397,
+              "rmse": 4387.03533207224,
+              "r2": 0.044195294634406745,
+              "interval_coverage": 0.9532839962997225
+            },
+            "2": {
+              "n": 11764,
+              "mae": 3627.8643954978907,
+              "rmse": 4902.127315165962,
+              "r2": 0.09231214371343721,
+              "interval_coverage": 0.9312308738524312
+            },
+            "3": {
+              "n": 6538,
+              "mae": 4385.908596803593,
+              "rmse": 5895.15033523121,
+              "r2": 0.12287191913412054,
+              "interval_coverage": 0.8716732945855001
+            },
+            "4": {
+              "n": 1214,
+              "mae": 5726.089124782165,
+              "rmse": 7678.898529237988,
+              "r2": 0.15201045998659746,
+              "interval_coverage": 0.7553542009884678
+            },
+            "5": {
+              "n": 485,
+              "mae": 8091.772966117322,
+              "rmse": 10168.676010601277,
+              "r2": 0.11064280264016801,
+              "interval_coverage": 0.6144329896907217
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 5170,
+              "mae": 4849.897843369235,
+              "rmse": 6659.157593814197,
+              "r2": 0.2680822739515859,
+              "interval_coverage": 0.8489361702127659
+            },
+            "2": {
+              "n": 9282,
+              "mae": 4032.1512762107263,
+              "rmse": 5411.111861689616,
+              "r2": 0.2728480336669542,
+              "interval_coverage": 0.8975436328377505
+            },
+            "3": {
+              "n": 4537,
+              "mae": 3506.8419782043866,
+              "rmse": 4783.223607435886,
+              "r2": 0.33306547301964773,
+              "interval_coverage": 0.9307912717654838
+            },
+            "4": {
+              "n": 3174,
+              "mae": 3236.4104535485644,
+              "rmse": 4642.721244156669,
+              "r2": 0.36503806121339766,
+              "interval_coverage": 0.9410838059231253
+            }
+          }
+        },
+        "scope": "Property-only cross-sectional 2024; current structural snapshot limitation shared with original"
+      },
+      "persistence": {
+        "candidate": "C_lag1__persistence",
+        "validation": {
+          "n": 28426,
+          "mae": 1851.7554351649899,
+          "rmse": 3244.2072595599957,
+          "r2": 0.7583010689163806
+        },
+        "final": {
+          "n": 21221,
+          "mae": 1684.5907355921022,
+          "rmse": 3005.871059533284,
+          "r2": 0.7874982921147542
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 4200.0,
+          "coverage": 0.9151783610574431,
+          "mean_width_kwh": 8143.197775788134,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1908,
+              "mae": 1572.9559748427673,
+              "rmse": 2858.805221696204,
+              "r2": 0.775852352144968,
+              "interval_coverage": 0.9276729559748428
+            },
+            "Detached": {
+              "n": 3450,
+              "mae": 1687.4782608695652,
+              "rmse": 3084.459410508179,
+              "r2": 0.8355645284278843,
+              "interval_coverage": 0.9176811594202898
+            },
+            "End terrace": {
+              "n": 2082,
+              "mae": 1758.837656099904,
+              "rmse": 3082.372958412892,
+              "r2": 0.718262305444311,
+              "interval_coverage": 0.9058597502401537
+            },
+            "Flat": {
+              "n": 2867,
+              "mae": 1623.2298569933728,
+              "rmse": 3037.057485841443,
+              "r2": 0.6495961080986772,
+              "interval_coverage": 0.9166376002790373
+            },
+            "Mid terrace": {
+              "n": 4614,
+              "mae": 1830.970957954053,
+              "rmse": 3236.0858830104203,
+              "r2": 0.6971006420639978,
+              "interval_coverage": 0.9020372778500216
+            },
+            "Semi detached": {
+              "n": 6300,
+              "mae": 1613.0,
+              "rmse": 2782.490890471262,
+              "r2": 0.7869154850377399,
+              "interval_coverage": 0.922063492063492
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1089,
+              "mae": 1730.394857667585,
+              "rmse": 3264.1779466789094,
+              "r2": 0.7257727024099139,
+              "interval_coverage": 0.9191919191919192
+            },
+            "E12000002": {
+              "n": 3013,
+              "mae": 1682.5091271158315,
+              "rmse": 2801.8212748182023,
+              "r2": 0.7843617782900161,
+              "interval_coverage": 0.9143710587454364
+            },
+            "E12000003": {
+              "n": 2140,
+              "mae": 1701.4953271028037,
+              "rmse": 2920.453171850554,
+              "r2": 0.806541654041976,
+              "interval_coverage": 0.9098130841121496
+            },
+            "E12000004": {
+              "n": 1887,
+              "mae": 1687.2284048754636,
+              "rmse": 3152.4252320502696,
+              "r2": 0.7457631049130816,
+              "interval_coverage": 0.9210386857445682
+            },
+            "E12000005": {
+              "n": 2233,
+              "mae": 1685.5799373040752,
+              "rmse": 2952.1099197110575,
+              "r2": 0.7688140938518164,
+              "interval_coverage": 0.9211822660098522
+            },
+            "E12000006": {
+              "n": 2176,
+              "mae": 1561.9485294117646,
+              "rmse": 2772.7219717009025,
+              "r2": 0.8160801128645994,
+              "interval_coverage": 0.9214154411764706
+            },
+            "E12000007": {
+              "n": 2503,
+              "mae": 2017.379145025969,
+              "rmse": 3476.6138392773873,
+              "r2": 0.7964790824730283,
+              "interval_coverage": 0.8773471833799441
+            },
+            "E12000008": {
+              "n": 3239,
+              "mae": 1630.0710095708553,
+              "rmse": 3037.70582581029,
+              "r2": 0.8089979730103074,
+              "interval_coverage": 0.9221982093238654
+            },
+            "E12000009": {
+              "n": 1844,
+              "mae": 1502.5488069414316,
+              "rmse": 2828.792350194798,
+              "r2": 0.7429241693065594,
+              "interval_coverage": 0.9349240780911063
+            },
+            "W92000004": {
+              "n": 1097,
+              "mae": 1556.2443026435733,
+              "rmse": 2765.459570538099,
+              "r2": 0.7615066386922018,
+              "interval_coverage": 0.9216043755697356
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2024,
+              "mae": 1553.211462450593,
+              "rmse": 3013.7358469084033,
+              "r2": 0.5437724436757709,
+              "interval_coverage": 0.9234189723320159
+            },
+            "2": {
+              "n": 11280,
+              "mae": 1593.0585106382978,
+              "rmse": 2822.9409429486627,
+              "r2": 0.6900287261331913,
+              "interval_coverage": 0.923581560283688
+            },
+            "3": {
+              "n": 6299,
+              "mae": 1729.4491189077632,
+              "rmse": 2989.611053277823,
+              "r2": 0.7671901542998267,
+              "interval_coverage": 0.9118907763137006
+            },
+            "4": {
+              "n": 1166,
+              "mae": 2209.5197255574612,
+              "rmse": 4028.0374580300654,
+              "r2": 0.7555134075016192,
+              "interval_coverage": 0.87221269296741
+            },
+            "5": {
+              "n": 452,
+              "mae": 2577.8761061946902,
+              "rmse": 4271.307855500488,
+              "r2": 0.826423640152712,
+              "interval_coverage": 0.8252212389380531
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 4901,
+              "mae": 2104.8153438073864,
+              "rmse": 3620.350728882828,
+              "r2": 0.7684068043555744,
+              "interval_coverage": 0.8790042848398286
+            },
+            "2": {
+              "n": 8925,
+              "mae": 1717.1652661064427,
+              "rmse": 3085.9070642136303,
+              "r2": 0.7578182594089313,
+              "interval_coverage": 0.9136134453781513
+            },
+            "3": {
+              "n": 4395,
+              "mae": 1387.3492605233218,
+              "rmse": 2394.501665327459,
+              "r2": 0.8319070371290269,
+              "interval_coverage": 0.9426621160409556
+            },
+            "4": {
+              "n": 3000,
+              "mae": 1336.6333333333334,
+              "rmse": 2402.056757586437,
+              "r2": 0.8196701272117451,
+              "interval_coverage": 0.9386666666666666
+            }
+          }
+        },
+        "scope": "Separate historical-input task, 2024 target using source years <=2023; selected model refit on training groups through 2023; calibration groups 2023",
+        "calibration_target_year": 2023,
+        "training_target_years": []
+      },
+      "C": {
+        "candidate": "C_gas_history__elasticnet__persistence_blend_0.5",
+        "validation": {
+          "n": 28426,
+          "mae": 1813.9666048579215,
+          "rmse": 3089.219219097611,
+          "r2": 0.7808431738477423
+        },
+        "final": {
+          "n": 21221,
+          "mae": 1637.3707459490793,
+          "rmse": 2846.4125981278053,
+          "r2": 0.8094462777897486
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 4142.602955350994,
+          "coverage": 0.9177701333584657,
+          "mean_width_kwh": 8103.791579325202,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1908,
+              "mae": 1509.9187292425167,
+              "rmse": 2637.6958671014454,
+              "r2": 0.8091841306900449,
+              "interval_coverage": 0.9292452830188679
+            },
+            "Detached": {
+              "n": 3450,
+              "mae": 1673.997437248074,
+              "rmse": 2974.9287119124924,
+              "r2": 0.8470355479241225,
+              "interval_coverage": 0.9176811594202898
+            },
+            "End terrace": {
+              "n": 2082,
+              "mae": 1723.797054058249,
+              "rmse": 2970.9170959594617,
+              "r2": 0.7382687071999894,
+              "interval_coverage": 0.9020172910662824
+            },
+            "Flat": {
+              "n": 2867,
+              "mae": 1581.1622732745407,
+              "rmse": 2845.191044704534,
+              "r2": 0.6924712219601407,
+              "interval_coverage": 0.9190791768399024
+            },
+            "Mid terrace": {
+              "n": 4614,
+              "mae": 1752.7911905851008,
+              "rmse": 3033.293350417654,
+              "r2": 0.7338741258190162,
+              "interval_coverage": 0.9087559601213697
+            },
+            "Semi detached": {
+              "n": 6300,
+              "mae": 1568.3987696028255,
+              "rmse": 2645.390598307691,
+              "r2": 0.8073965778210499,
+              "interval_coverage": 0.9255555555555556
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1089,
+              "mae": 1735.1087780902642,
+              "rmse": 3135.390927621453,
+              "r2": 0.746984908589126,
+              "interval_coverage": 0.9146005509641874
+            },
+            "E12000002": {
+              "n": 3013,
+              "mae": 1618.1966489294314,
+              "rmse": 2654.272620157193,
+              "r2": 0.8064755068250662,
+              "interval_coverage": 0.9190175904414205
+            },
+            "E12000003": {
+              "n": 2140,
+              "mae": 1657.4713172876036,
+              "rmse": 2798.403076628471,
+              "r2": 0.8223735992848479,
+              "interval_coverage": 0.9163551401869159
+            },
+            "E12000004": {
+              "n": 1887,
+              "mae": 1635.477814510495,
+              "rmse": 2974.17825864253,
+              "r2": 0.7737008226025018,
+              "interval_coverage": 0.9210386857445682
+            },
+            "E12000005": {
+              "n": 2233,
+              "mae": 1639.8155443475969,
+              "rmse": 2775.4346267158694,
+              "r2": 0.7956576841771477,
+              "interval_coverage": 0.9189431258396775
+            },
+            "E12000006": {
+              "n": 2176,
+              "mae": 1524.7861944015372,
+              "rmse": 2638.6643192606107,
+              "r2": 0.833434776113687,
+              "interval_coverage": 0.9223345588235294
+            },
+            "E12000007": {
+              "n": 2503,
+              "mae": 1935.5814174866505,
+              "rmse": 3276.9750244774095,
+              "r2": 0.8191816901533633,
+              "interval_coverage": 0.8853375948861366
+            },
+            "E12000008": {
+              "n": 3239,
+              "mae": 1610.143914764387,
+              "rmse": 2898.309416401737,
+              "r2": 0.826125440140255,
+              "interval_coverage": 0.9234331583822167
+            },
+            "E12000009": {
+              "n": 1844,
+              "mae": 1449.4773975230312,
+              "rmse": 2638.6298842285514,
+              "r2": 0.7763257119584659,
+              "interval_coverage": 0.9365509761388287
+            },
+            "W92000004": {
+              "n": 1097,
+              "mae": 1491.2067126477962,
+              "rmse": 2575.0352394677107,
+              "r2": 0.7932202429964392,
+              "interval_coverage": 0.9288969917958068
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2024,
+              "mae": 1516.3125660105325,
+              "rmse": 2825.367226289391,
+              "r2": 0.5990216246981039,
+              "interval_coverage": 0.9263833992094862
+            },
+            "2": {
+              "n": 11280,
+              "mae": 1536.9312574965425,
+              "rmse": 2659.465276780682,
+              "r2": 0.7248899147137579,
+              "interval_coverage": 0.925709219858156
+            },
+            "3": {
+              "n": 6299,
+              "mae": 1678.1440034646125,
+              "rmse": 2838.4123257816696,
+              "r2": 0.7901432561252865,
+              "interval_coverage": 0.9166534370535006
+            },
+            "4": {
+              "n": 1166,
+              "mae": 2199.865875321104,
+              "rmse": 3819.995724061896,
+              "r2": 0.7801159132532787,
+              "interval_coverage": 0.8687821612349914
+            },
+            "5": {
+              "n": 452,
+              "mae": 2666.7493211750016,
+              "rmse": 4267.888136301122,
+              "r2": 0.8267014683082594,
+              "interval_coverage": 0.8230088495575221
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 4901,
+              "mae": 2047.8064918663517,
+              "rmse": 3429.615732239298,
+              "r2": 0.7921665584148398,
+              "interval_coverage": 0.8839012446439503
+            },
+            "2": {
+              "n": 8925,
+              "mae": 1655.6918518541086,
+              "rmse": 2914.2358060252664,
+              "r2": 0.7840142540325943,
+              "interval_coverage": 0.9161904761904762
+            },
+            "3": {
+              "n": 4395,
+              "mae": 1363.7877546690015,
+              "rmse": 2288.990060521653,
+              "r2": 0.8463943964358976,
+              "interval_coverage": 0.940386803185438
+            },
+            "4": {
+              "n": 3000,
+              "mae": 1313.1493411934164,
+              "rmse": 2270.212053543137,
+              "r2": 0.8389228278135861,
+              "interval_coverage": 0.9446666666666667
+            }
+          }
+        },
+        "scope": "Separate historical-input task, 2024 target using source years <=2023; selected model refit on training groups through 2023; calibration groups 2023",
+        "calibration_target_year": 2023,
+        "training_target_years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "C_r2": {
+        "candidate": "C_gas_history__elasticnet__persistence_blend_0.75",
+        "validation": {
+          "n": 28426,
+          "mae": 1840.8467704417753,
+          "rmse": 3067.068037202702,
+          "r2": 0.7839748246206641
+        },
+        "final": {
+          "n": 21221,
+          "mae": 1666.2407503249071,
+          "rmse": 2824.64321513564,
+          "r2": 0.8123498442577978
+        },
+        "interval": {
+          "target": 0.9,
+          "radius_kwh": 4149.805159050611,
+          "coverage": 0.915885208048631,
+          "mean_width_kwh": 8144.679467041133,
+          "method": "Absolute-residual split conformal, target-domain clipped; marginal coverage only"
+        },
+        "subgroups": {
+          "PROP_TYPE": {
+            "Bungalow": {
+              "n": 1908,
+              "mae": 1534.2459934387357,
+              "rmse": 2588.8453355780953,
+              "r2": 0.8161865598568191,
+              "interval_coverage": 0.9276729559748428
+            },
+            "Detached": {
+              "n": 3450,
+              "mae": 1741.439615041808,
+              "rmse": 3001.5021577809916,
+              "r2": 0.8442906439007392,
+              "interval_coverage": 0.9098550724637681
+            },
+            "End terrace": {
+              "n": 2082,
+              "mae": 1754.3176095741028,
+              "rmse": 2960.9891486682786,
+              "r2": 0.7400150452856433,
+              "interval_coverage": 0.9000960614793467
+            },
+            "Flat": {
+              "n": 2867,
+              "mae": 1606.597574234419,
+              "rmse": 2799.9493483672345,
+              "r2": 0.7021735627298663,
+              "interval_coverage": 0.9197767701430066
+            },
+            "Mid terrace": {
+              "n": 4614,
+              "mae": 1757.5212325344614,
+              "rmse": 2981.86944682202,
+              "r2": 0.742820987056292,
+              "interval_coverage": 0.9085392284351972
+            },
+            "Semi detached": {
+              "n": 6300,
+              "mae": 1596.218961887642,
+              "rmse": 2633.4062040485874,
+              "r2": 0.809137724748396,
+              "interval_coverage": 0.9244444444444444
+            }
+          },
+          "REGION": {
+            "E12000001": {
+              "n": 1089,
+              "mae": 1779.851004379358,
+              "rmse": 3125.1054214931733,
+              "r2": 0.7486421946026065,
+              "interval_coverage": 0.9118457300275482
+            },
+            "E12000002": {
+              "n": 3013,
+              "mae": 1635.6698728146002,
+              "rmse": 2632.3367214674226,
+              "r2": 0.8096610062800436,
+              "interval_coverage": 0.9170262197145702
+            },
+            "E12000003": {
+              "n": 2140,
+              "mae": 1693.9270164454786,
+              "rmse": 2801.472659811668,
+              "r2": 0.8219837068816653,
+              "interval_coverage": 0.914018691588785
+            },
+            "E12000004": {
+              "n": 1887,
+              "mae": 1663.9922307233712,
+              "rmse": 2934.8586833813283,
+              "r2": 0.779644763864108,
+              "interval_coverage": 0.9194488606253313
+            },
+            "E12000005": {
+              "n": 2233,
+              "mae": 1662.877603797472,
+              "rmse": 2750.5827753647923,
+              "r2": 0.7993007523797261,
+              "interval_coverage": 0.9198387819077474
+            },
+            "E12000006": {
+              "n": 2176,
+              "mae": 1558.401948839854,
+              "rmse": 2625.956710146395,
+              "r2": 0.8350352441522219,
+              "interval_coverage": 0.921875
+            },
+            "E12000007": {
+              "n": 2503,
+              "mae": 1962.5825227610885,
+              "rmse": 3251.522253667652,
+              "r2": 0.8219796690652627,
+              "interval_coverage": 0.8837395125848981
+            },
+            "E12000008": {
+              "n": 3239,
+              "mae": 1650.992843133302,
+              "rmse": 2886.539637398584,
+              "r2": 0.8275347512890258,
+              "interval_coverage": 0.9188020994133992
+            },
+            "E12000009": {
+              "n": 1844,
+              "mae": 1468.488210994777,
+              "rmse": 2588.69357434512,
+              "r2": 0.7847117133631617,
+              "interval_coverage": 0.93058568329718
+            },
+            "W92000004": {
+              "n": 1097,
+              "mae": 1509.3129198793104,
+              "rmse": 2534.242217086985,
+              "r2": 0.7997198491058564,
+              "interval_coverage": 0.9343664539653601
+            }
+          },
+          "FLOOR_AREA_BAND": {
+            "1": {
+              "n": 2024,
+              "mae": 1540.0104710111834,
+              "rmse": 2777.0707333904256,
+              "r2": 0.612613012259644,
+              "interval_coverage": 0.9273715415019763
+            },
+            "2": {
+              "n": 11280,
+              "mae": 1551.4485430058483,
+              "rmse": 2622.763203337254,
+              "r2": 0.7324308574907543,
+              "interval_coverage": 0.925709219858156
+            },
+            "3": {
+              "n": 6299,
+              "mae": 1711.1642537992814,
+              "rmse": 2823.663174432455,
+              "r2": 0.7923185335375815,
+              "interval_coverage": 0.9137958406096206
+            },
+            "4": {
+              "n": 1166,
+              "mae": 2279.56142369152,
+              "rmse": 3811.720641012048,
+              "r2": 0.7810675312112095,
+              "interval_coverage": 0.8576329331046312
+            },
+            "5": {
+              "n": 452,
+              "mae": 2888.0131626244815,
+              "rmse": 4449.180752494728,
+              "r2": 0.8116659147560866,
+              "interval_coverage": 0.7986725663716814
+            }
+          },
+          "PROP_AGE_BAND": {
+            "1": {
+              "n": 4901,
+              "mae": 2078.9204251923306,
+              "rmse": 3402.4953029144935,
+              "r2": 0.7954405380980628,
+              "interval_coverage": 0.8810446847582126
+            },
+            "2": {
+              "n": 8925,
+              "mae": 1681.1376592521349,
+              "rmse": 2884.8467512932352,
+              "r2": 0.7883485705226214,
+              "interval_coverage": 0.9149579831932773
+            },
+            "3": {
+              "n": 4395,
+              "mae": 1395.0643009814114,
+              "rmse": 2287.8242623101028,
+              "r2": 0.8465508213495949,
+              "interval_coverage": 0.9376564277588169
+            },
+            "4": {
+              "n": 3000,
+              "mae": 1345.014915712878,
+              "rmse": 2257.9032097666022,
+              "r2": 0.8406647785923268,
+              "interval_coverage": 0.9436666666666667
+            }
+          }
+        },
+        "scope": "Separate historical-input task, 2024 target using source years <=2023; selected model refit on training groups through 2023; calibration groups 2023",
+        "calibration_target_year": 2023,
+        "training_target_years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      }
+    },
+    "paired_comparisons": {
+      "B_default_vs_A": {
+        "mae_gain_kwh": 45.373280454763595,
+        "mae_gain_95_ci": [
+          36.97535433787492,
+          53.15332284233166
+        ],
+        "independent_groups": 22132,
+        "bootstrap_repetitions": 1200,
+        "interpretation": "Positive means challenger improves. Pointwise property-group bootstrap intervals for prespecified comparisons; not causal effects."
+      },
+      "B_detail_vs_default_reported_terraces": {
+        "mae_gain_kwh": 17.68410878279534,
+        "mae_gain_95_ci": [
+          5.372936134386778,
+          30.745639697112395
+        ],
+        "independent_groups": 6994,
+        "bootstrap_repetitions": 1200,
+        "interpretation": "Positive means challenger improves. Pointwise property-group bootstrap intervals for prespecified comparisons; not causal effects."
+      },
+      "C_vs_persistence": {
+        "mae_gain_kwh": 47.21998964302268,
+        "mae_gain_95_ci": [
+          38.935328856922844,
+          55.84461276544971
+        ],
+        "independent_groups": 21202,
+        "bootstrap_repetitions": 1200,
+        "interpretation": "Positive means challenger improves. Pointwise property-group bootstrap intervals for prespecified comparisons; not causal effects."
+      }
+    },
+    "coverage": {
+      "raw_final_rows": 29481,
+      "valid_gas2024": 22163,
+      "history_eligible": 21221,
+      "history_fraction_of_valid_gas": 0.9574967287822046,
+      "past_gas_invalid_fraction_by_year": {
+        "2023": 0.04250327121779542,
+        "2022": 0.049587149754094666,
+        "2021": 0.06641700130848711
+      },
+      "required_property_missing_fraction": 0.0
+    },
+    "history_cohort_property_only_context": {
+      "A": {
+        "n": 21221,
+        "mae": 3992.023907735111,
+        "rmse": 5420.235832407903,
+        "r2": 0.309031742689886
+      },
+      "B_default": {
+        "n": 21221,
+        "mae": 3949.3505353482387,
+        "rmse": 5414.82141318108,
+        "r2": 0.3104115067239991
+      }
+    },
+    "retrospective_shift_diagnostics": {
+      "2023": {
+        "A": {
+          "n": 14806,
+          "mae": 4131.626543918825,
+          "rmse": 5599.558013277228,
+          "r2": 0.3223992981383881
+        },
+        "B_default": {
+          "n": 14806,
+          "mae": 4087.062216965872,
+          "rmse": 5588.751485391122,
+          "r2": 0.3250121633126576
+        },
+        "B_detail": {
+          "n": 14806,
+          "mae": 4084.912291290375,
+          "rmse": 5585.742523001638,
+          "r2": 0.32573878938448986
+        }
+      },
+      "2021": {
+        "A": {
+          "n": 14638,
+          "mae": 4420.215216433532,
+          "rmse": 6173.73482935665,
+          "r2": 0.282463797215345
+        },
+        "B_default": {
+          "n": 14638,
+          "mae": 4453.2898068541945,
+          "rmse": 6246.703626619669,
+          "r2": 0.2654021094833633
+        },
+        "B_detail": {
+          "n": 14638,
+          "mae": 4446.8331394687175,
+          "rmse": 6240.831090760903,
+          "r2": 0.2667826535062079
+        }
+      }
+    },
+    "deployment": {
+      "default_candidate_passed": true,
+      "optional_subtype_passed": true,
+      "historical_scenario_passed": true,
+      "policy": "Frozen pre-final candidate identities and gates only. No substitute chosen from final outcomes."
+    },
+    "limitations": [
+      "Final property holdout is independent of the known 50,000-row groups, but drawn from the same 2026 release.",
+      "Current property snapshots are retrospective; EPC and mutable undated fields remain excluded.",
+      "Historical readings are revised/weather-corrected source-year figures; ordinary raw bills and real-time vintages are not validated.",
+      "C has different information and an eligibility subset; it is never reported as default-model performance."
+    ]
+  }
+}

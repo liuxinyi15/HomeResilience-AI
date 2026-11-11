@@ -1,0 +1,129 @@
+{
+  "protocol": {
+    "version": 1,
+    "status": "Retrospective fixed protocol; not a prospectively sealed or blinded study",
+    "temporal": {
+      "source": "data/raw/need/installation-years.ods",
+      "sheet": "Table",
+      "development_years": [
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "heldout_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "estimator": "Unweighted arithmetic mean of development-year published median fractions per measure",
+      "baseline": "Last development-year published median fraction",
+      "metric": "Absolute error in percentage points of held-out cohort median, not household error",
+      "measure_columns": {
+        "solid": 7,
+        "cavity": 8,
+        "loft": 9
+      },
+      "no_tuning": true
+    },
+    "epc": {
+      "heldout_region": "Yorkshire and The Humber",
+      "property_holdout": "20% by stable property-group SHA256 modulo 5",
+      "identity": "Union of UPRN, building reference and normalised complete address+postcode; no certificate fallback",
+      "repeated_certificates": "Deduplicate exact certificate records, fail on conflicting duplicates, group all identities before retaining latest certificate per property",
+      "labels": "Mapped positive EPC recommendations are a reference only; missing recommendations are not negative labels",
+      "metric": "Positive recommendation agreement, mapping coverage and exclusions, never causal suitability accuracy"
+    },
+    "products": {
+      "development_certificate": "KM 713574",
+      "heldout_certificate": "KM 747472",
+      "target": "Reject certified kiosk records as domestic retrofit configurations",
+      "limitation": "Only one held-out certificate holder; rule checks are not product-performance prediction or independent certificate authenticity verification"
+    },
+    "portfolio": {
+      "oracle": "Independent combination enumeration and constraint checks, sharing declared production benefit functions",
+      "robustness": "Nine non-probabilistic cost/benefit assumptions",
+      "fixture": "Three existing synthetic decision cases"
+    }
+  },
+  "protocol_sha256": "b4d1ed996c1be8f86dca3ead4462f0562ce1ed05260136abba6e431291bded92",
+  "external_temporal": {
+    "status": "executed",
+    "source_url": "https://www.gov.uk/government/statistics/national-energy-efficiency-data-framework-need-impact-of-measures-data-tables-2026",
+    "source_sha256": "ef08c2c783de80e661ba83d750715aa346ff1480586de5bc79f7f9ad1140c697",
+    "results": {
+      "solid": {
+        "heldout_cells": 3,
+        "mean_absolute_error_pp": 2.743495658659073,
+        "last_year_baseline_mae_pp": 3.488905202434997,
+        "development_mean_fraction": 0.15898531053542628
+      },
+      "cavity": {
+        "heldout_cells": 3,
+        "mean_absolute_error_pp": 1.471983014101496,
+        "last_year_baseline_mae_pp": 1.8454122405098532,
+        "development_mean_fraction": 0.08290164750840678
+      },
+      "loft": {
+        "heldout_cells": 3,
+        "mean_absolute_error_pp": 0.30487739209535136,
+        "last_year_baseline_mae_pp": 0.28130237741096004,
+        "development_mean_fraction": 0.02814476566546616
+      }
+    },
+    "heldout_cells": 9,
+    "limitations": [
+      "Retrospective fixed split; historical table was already present and inspected. Not a blinded or prospectively registered test.",
+      "All years re-estimated within the same 2026 release/methodology. Distinct installation-year cohorts do not prove property-disjoint data or independent sampling.",
+      "Aggregate median stability only: nine correlated measure-year cells, not nine households. No personal or causal-effect accuracy, interval coverage or significance claimed.",
+      "Estimator is a transfer diagnostic; production published group effects are unchanged."
+    ]
+  },
+  "epc_suitability": {
+    "status": "not_run_access_required",
+    "metrics": null,
+    "reason": "Official bulk downloads and API bearer token require GOV.UK One Login; no authorised certificate/recommendation exports supplied.",
+    "source_url": "https://get-energy-performance-data.communities.gov.uk/guidance/energy-certificate-data-apis"
+  },
+  "unseen_product_checks": {
+    "status": "executed_rule_scope_checks",
+    "results": [
+      {
+        "product_id": "kingsley-vent",
+        "certificate": "KM 747472",
+        "domestic_eligible": false
+      },
+      {
+        "product_id": "kingsley-door",
+        "certificate": "KM 747472",
+        "domestic_eligible": false
+      }
+    ],
+    "limitations": "Only one held-out certificate holder; rule checks are not product-performance prediction or independent certificate authenticity verification"
+  },
+  "portfolio": {
+    "runs": 27,
+    "optimality_failures": 0,
+    "constraint_violations": 0,
+    "incorrect_robust_affordability": 0
+  },
+  "cannot_externally_validate": [
+    "Individual causal retrofit savings or personal uncertainty coverage from aggregate NEED tables.",
+    "Whole-property flood loss reduction, product-specific field reliability, avoided repair cost or recovery time from certification and selected case studies.",
+    "Material-specific lifecycle carbon or energy gains without appropriate verified thermal/EPD data.",
+    "Grant/insurance entitlement, installed fit or structural safety from a directory entry.",
+    "Property-grouped and region-held-out reference agreement until authorised linked EPC records are available."
+  ],
+  "sources": {
+    "products_sha256": "38baf7088c5fe73d290347508a0adcf6a9b785a6f04a707dea0cdfbbbe8553fc",
+    "decision_evidence_sha256": "1dfc07e007bab6da1357393f5d6abf95d94bf09ab9831ba7ee3a4d1b7fd06c5b",
+    "script_sha256": "25455dc36738cee4ea8f14bfa17217a0e269f04aa9eeb017e84364e28749bd71",
+    "case_sha256": "cfcc1b1676b834eedebecacb248d3fe4875b256116e04c4f5356314079cbc5fd"
+  }
+}

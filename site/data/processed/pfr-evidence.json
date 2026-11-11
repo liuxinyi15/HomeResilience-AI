@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "sources": {
+    "pfr-ea-adaptation": {
+      "title": "ea adaptation",
+      "source_url": "https://www.gov.uk/guidance/adapting-your-home-or-business-to-the-risk-of-flooding",
+      "source_file": "data/raw/pfr/ea-adaptation.html",
+      "sha256": "f60dccc9cc84fa43ffcaf38abb83f6520645de2e7a15659b4436fdd5956b0a6e",
+      "locator": "External doors; Air bricks; Drains and pipes; Flooring; Electrical; Buying and checking flood protection products",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "C \u00b7 Authoritative guidance / expert synthesis",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-defra-post-installation": {
+      "title": "defra post installation",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6034e365e90e07660e26e9b0/Post-Installation_Effectiveness_of_Property_Level_Flood_Protection__final_report.pdf",
+      "source_file": "data/raw/pfr/defra-post-installation.pdf",
+      "sha256": "ad2eff4f83b7d725ae90a1b24cf17bddee1a8603166d419341cc75aa7b1a048c",
+      "locator": "Executive summary; Stage 1 survey; Stage 3 operation and maintenance; Annex B questionnaire",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "C \u00b7 Authoritative guidance / expert synthesis",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-defra-synthesis-2026": {
+      "title": "defra synthesis 2026",
+      "source_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis",
+      "source_file": "data/raw/pfr/defra-synthesis-2026.html",
+      "sha256": "f971d6cdc37ee924e5945e689d40d7967241e580ead2c21975755d8962f543c4",
+      "locator": "Main findings; FD2751, published 12 May 2026",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "C \u00b7 Authoritative guidance / expert synthesis",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-bewdley-2022": {
+      "title": "bewdley 2022",
+      "source_url": "https://befloodready.ciwem.org/case-study/bewdley-property-flood-resilience-pfr-post-installation-effectiveness-national-learning-may-2022/",
+      "source_file": "data/raw/pfr/bewdley-2022.html",
+      "sha256": "d81f81d5d2010d4a0280612f2fc30b4bbd515dc19287925b05559a670ed14e2c",
+      "locator": "February 2022 event: resident responses and performance findings",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "A \u00b7 Observed self-reported package outcomes",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-government-measures": {
+      "title": "government measures",
+      "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+      "source_file": "data/raw/pfr/government-measures.html",
+      "sha256": "b247044a2cecf92c016485087d41ff494fd289b931acfad15da08d2db4ba41eb",
+      "locator": "Protect your property",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "C \u00b7 Authoritative guidance / expert synthesis",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-flood-re-bbb": {
+      "title": "flood re bbb",
+      "source_url": "https://www.floodre.co.uk/buildbackbetter/",
+      "source_file": "data/raw/pfr/flood-re-bbb.html",
+      "sha256": "608402cbdc739995c7c079631bdf7a2b052421c12164578a56a8a1fbaf59b5a6",
+      "locator": "Build Back Better: eligibility and post-flood funding description",
+      "unit": "Qualitative evidence unless explicitly stated",
+      "kind": "C \u00b7 Authoritative guidance / expert synthesis",
+      "method": "Source-checked conditional evidence lookup; no learned outcome labels",
+      "limitations": "No transferable product-specific household damage reduction is established. Scope, product certification, survey, installation and maintenance matter."
+    },
+    "pfr-historic-appraisal": {
+      "title": "FD2657 cost-effectiveness appraisal",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "source_file": "data/raw/evidence/fd2657.pdf",
+      "sha256": "2b0b4aefbe4a3bfb9ed47547fa9ddadbb372ffbb5f37873c8fcc17662a9527af",
+      "locator": "Table 2.1 (2011 cost base); Table 2.14 (printed p24); Figure 3.2",
+      "kind": "B / D \u00b7 Published modelled appraisal with expert assumptions",
+      "unit": "Historical GBP; assumed package reliability",
+      "method": "2012 appraisal; automatic 90% / manual 77% reliability factors are assigned expert model inputs",
+      "limitations": "Not observed product-specific damage savings or current quotes. These factors are not used to claim household effectiveness. A 0.6m resistance cutoff is a historical modelling boundary, not certification or a universal safe depth."
+    },
+    "pfr-pathway-preference": {
+      "title": "Conditional pathway coverage preference",
+      "kind": "D \u00b7 Declared decision rule",
+      "source_url": null,
+      "unit": "Ordinal preference points, not effectiveness",
+      "method": "Equal weighting of the set of relevant unaddressed mechanisms; union removes overlap. Low/central/high stress multipliers 0.8/1/1.2. Survey alone earns no physical benefit. No band is converted to a probability.",
+      "limitations": "Coverage is a design-discussion proxy. Equal pathway values and stress multipliers are preferences, not empirically calibrated loss reduction. Suspected drainage/services/floor paths require survey confirmation."
+    }
+  },
+  "observations": [
+    {
+      "evidence_id": "pfr-bewdley-2022",
+      "respondents": 29,
+      "positive_responses": 28,
+      "reported_no_ingress": 8,
+      "reported_reduced_ingress": 14,
+      "reported_overtopping": 5,
+      "kind": "A \u00b7 Observed self-reported package outcomes",
+      "scope": "Selected Bewdley resident responses after February 2022; packages varied and some were modified",
+      "limitation": "Not measured monetary damage reduction, not randomised, not an individual-measure success rate. Descriptive subgroup counts are not exhaustive or forced to sum to 28. Never used as optimisation coefficients."
+    }
+  ],
+  "measures": {
+    "survey": {
+      "id": "survey",
+      "approach": "enabling",
+      "pathways": [],
+      "vulnerability": "Unknown entry paths and safe design",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Independent property-level survey of flood sources, thresholds, depth/duration, drainage, fabric and occupant capabilities.",
+      "supported_benefit": "No direct damage reduction can be assigned to a survey alone.",
+      "maintenance": "Independent specification, review after change/flood; installation and evacuation plans.",
+      "failure_conditions": "A survey may rule out all proposed physical works.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "No universal depth range; design to surveyed flood conditions, construction and services.",
+      "costs": {
+        "low": 350,
+        "central": 600,
+        "high": 1000,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 400,
+          "central": 450,
+          "high": 500,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Survey",
+          "unit": "survey",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "barrier": {
+      "id": "barrier",
+      "approach": "resistance",
+      "pathways": [
+        "openings"
+      ],
+      "vulnerability": "Water entry at external doors",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Surveyed fit, certified product design depth, warning, safe deployment, storage and practice.",
+      "supported_benefit": "Can limit ingress through protected openings; leakage elsewhere and overtopping remain.",
+      "maintenance": "Check seals and fixings, store accessibly, practise deployment and inspect after floods.",
+      "failure_conditions": "Insufficient warning, absent occupant, leakage, overtopping, poor fit or structural loading.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "Product- and site-specific certified range required. Unknown depth is not zero; resistance above 0.6m is deferred by this conservative screening policy pending bespoke structural design.",
+      "costs": {
+        "low": 400,
+        "central": 850,
+        "high": 1500,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 500,
+          "central": 700,
+          "high": 900,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Demountable Door Guards",
+          "unit": "per door guard",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "flood-door": {
+      "id": "flood-door",
+      "approach": "resistance",
+      "pathways": [
+        "openings"
+      ],
+      "vulnerability": "Water entry at external doors",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Surveyed aperture, appropriate tested product, safe structure and normally closed operation.",
+      "supported_benefit": "Can limit ingress at that doorway; passive operation does not guarantee whole-building protection.",
+      "maintenance": "Maintain seals, hinges and latches; inspect wear, closure and post-flood condition.",
+      "failure_conditions": "Door left open, worn seals, bypass leakage, excess depth/duration or unsuitable structure.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "Product- and site-specific certified range required. Unknown depth is not zero; resistance above 0.6m is deferred by this conservative screening policy pending bespoke structural design.",
+      "costs": {
+        "low": 1600,
+        "central": 2600,
+        "high": 4200,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 1000,
+          "central": 1500,
+          "high": 2000,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Automatic Door Guards",
+          "unit": "per automatic guard, not necessarily a replacement door",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "air-bricks": {
+      "id": "air-bricks",
+      "approach": "resistance",
+      "pathways": [
+        "vents"
+      ],
+      "vulnerability": "Water entry at reported low vents",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Confirm vents, floor void and a suitable self-closing system; preserve ventilation.",
+      "supported_benefit": "Addresses the vent pathway only, not other wall/floor entry routes.",
+      "maintenance": "Inspect closures and clear debris; retain ventilation and check manufacturer schedule.",
+      "failure_conditions": "Blocked mechanism, inappropriate ventilation changes, ingress through unprotected routes.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "Product- and site-specific certified range required. Unknown depth is not zero; resistance above 0.6m is deferred by this conservative screening policy pending bespoke structural design.",
+      "costs": {
+        "low": 300,
+        "central": 600,
+        "high": 1000,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 50,
+          "central": 70,
+          "high": 90,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Self-closing airbrick",
+          "unit": "per airbrick",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "valve": {
+      "id": "valve",
+      "approach": "resistance",
+      "pathways": [
+        "drainage"
+      ],
+      "vulnerability": "Sewer/drain backflow",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Drainage specialist must confirm routes, access, gradients and suitable valve design.",
+      "supported_benefit": "Addresses an assessed drainage backflow route; surface-water entry is not solved.",
+      "maintenance": "Service and clear fouling to manufacturer instructions; maintain drainage access.",
+      "failure_conditions": "Debris, valve failure, unprotected branches or unsuitable drainage system.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "Product- and site-specific certified range required. Unknown depth is not zero; resistance above 0.6m is deferred by this conservative screening policy pending bespoke structural design.",
+      "costs": {
+        "low": 250,
+        "central": 500,
+        "high": 900,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 550,
+          "central": 600,
+          "high": 650,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Non-return valves 110mm soil waste pipe",
+          "unit": "per 110 mm valve",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "electrics": {
+      "id": "electrics",
+      "approach": "recoverability",
+      "pathways": [
+        "services"
+      ],
+      "vulnerability": "Damage/interruption to low electrical services",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Qualified electrician, surveyed design flood level and compliant accessible service layout.",
+      "supported_benefit": "Guidance supports relocating services; no personal monetary damage saving is quantified.",
+      "maintenance": "Electrical safety inspections and post-flood checks; no DIY energising flooded systems.",
+      "failure_conditions": "Water above relocated services, affected hidden circuits, unsafe supply or loss of access.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "No universal depth range; design to surveyed flood conditions, construction and services.",
+      "costs": {
+        "low": 900,
+        "central": 1800,
+        "high": 3200,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": {
+          "low": 760,
+          "central": 800,
+          "high": 840,
+          "currency": "GBP",
+          "price_year": 2011,
+          "item": "Move electrics well above likely flood level",
+          "unit": "report whole-property scenario",
+          "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+          "locator": "Table 2.1, printed page 9 / PDF page 18",
+          "use": "Historical research reference only; not used as a current installation quote or price range."
+        }
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    },
+    "flooring": {
+      "id": "flooring",
+      "approach": "recoverability",
+      "pathways": [
+        "floor_recovery"
+      ],
+      "vulnerability": "Slow recovery of vulnerable floor finishes",
+      "hazards": [
+        "River/coastal inundation if site survey confirms pathway",
+        "Surface-water/sewer/groundwater routes require separate site evidence"
+      ],
+      "prerequisites": "Survey the floor, moisture, contamination and traditional/modern fabric before selecting materials.",
+      "supported_benefit": "Suitable recoverable finishes can ease cleaning/drying; substrate and walls may still be damaged.",
+      "maintenance": "Inspect finish, joints and substrate; arrange hygienic cleaning and drying after floods.",
+      "failure_conditions": "Unsuitable impermeable build-up, groundwater pressure or incompatible historic materials.",
+      "evidence_class": "C \u00b7 Authoritative engineering guidance",
+      "quantitative_damage_reduction": null,
+      "quantitative_effectiveness_range": null,
+      "depth_range_m": null,
+      "depth_note": "No universal depth range; design to surveyed flood conditions, construction and services.",
+      "costs": {
+        "low": 2000,
+        "central": 4000,
+        "high": 7000,
+        "origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+        "historical_reference": null
+      },
+      "evidence_ids": [
+        "pfr-ea-adaptation",
+        "pfr-defra-post-installation"
+      ],
+      "unknowns": [
+        "No validated individual loss or recovery-time reduction",
+        "No universal current installation price",
+        "Property survey and product certification have not been supplied"
+      ]
+    }
+  },
+  "quantitative_model_available": false,
+  "research_conclusion": "Available material supports observed package responses, modelled appraisal and conditional engineering guidance, not transferable individual measure damage-reduction coefficients.",
+  "source_access_limitations": {
+    "historic-recoverability": "HTTP Error 403: Forbidden",
+    "ea-guidance": "HTTP Error 404: Not Found",
+    "historic-resistance": "HTTP Error 403: Forbidden"
+  },
+  "additional_materials": {
+    "description": "Internal finishes/materials: EA internal-walls guidance and survey-led flooring assessment; no separately costed intervention or invented effectiveness added.",
+    "source_url": "https://www.gov.uk/guidance/adapting-your-home-or-business-to-the-risk-of-flooding"
+  },
+  "policy": {
+    "resistance_depth_review_m": 0.6,
+    "note": "Conservative deferral boundary from historical appraisal, supported by separately reviewed Historic England structural advice. Not a universally safe resistance depth. Survey/product rating required at all depths.",
+    "modelled_assumptions_not_used": {
+      "automatic_reliability": 0.9,
+      "manual_reliability": 0.77
+    }
+  }
+}

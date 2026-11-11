@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "checked": "2026-11-04",
+  "sources": {
+    "bsi-m3": {
+      "url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "access": "Official BSI directory read through web retrieval; direct download HTTP 403. No raw HTML hash claimed.",
+      "locator": "All Products: outward doors, Type E barrier, single airbrick; KM 713574"
+    },
+    "bsi-kingsley": {
+      "url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B747472&productid=124527",
+      "access": "Official BSI directory read through web retrieval; no raw HTML acquisition claimed.",
+      "locator": "Selected GRP vent panel and single door kiosk panel; KM 747472"
+    },
+    "bsi-standard": {
+      "url": "https://knowledge.bsigroup.com/products/flood-resistance-products-building-products-specification-1",
+      "locator": "Scope, BS 851188-1:2019+A1:2021",
+      "access": "Public scope only; paid full standard not acquired"
+    }
+  },
+  "products": [
+    {
+      "id": "m3-upvc-out",
+      "name": "M3 Floodtec M3FDUPVC, outward",
+      "measure_ids": [
+        "flood-door"
+      ],
+      "material": "PVCu",
+      "dimensions": "2010 × 900 mm",
+      "dmwd_m": 0.6,
+      "application": "domestic_opening",
+      "certificate": "KM 713574",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-m3",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    },
+    {
+      "id": "m3-timber-out",
+      "name": "M3 Floodtec M3FDTD, outward",
+      "measure_ids": [
+        "flood-door"
+      ],
+      "material": "Timber",
+      "dimensions": "2010 × 900 mm",
+      "dmwd_m": 0.6,
+      "application": "domestic_opening",
+      "certificate": "KM 713574",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-m3",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    },
+    {
+      "id": "m3-type-e",
+      "name": "M3 Floodtec M3FDB, slot-in Type E",
+      "measure_ids": [
+        "barrier"
+      ],
+      "material": "Not specified in directory extract",
+      "dimensions": "925 × 900 mm",
+      "dmwd_m": 0.6,
+      "application": "domestic_opening",
+      "certificate": "KM 713574",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-m3",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    },
+    {
+      "id": "m3-airbrick-single",
+      "name": "M3 Floodtec M3AFA, single automatic",
+      "measure_ids": [
+        "air-bricks"
+      ],
+      "material": "Not specified in directory extract",
+      "dimensions": "210 × 65 mm",
+      "dmwd_m": 0.6,
+      "application": "domestic_opening",
+      "certificate": "KM 713574",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-m3",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    },
+    {
+      "id": "kingsley-vent",
+      "name": "Kingsley GRP kiosk vent, FRB-DWG-004 revision 3",
+      "measure_ids": [],
+      "material": "GRP",
+      "dimensions": "450 × 900 mm",
+      "dmwd_m": 0.9,
+      "application": "kiosk",
+      "certificate": "KM 747472",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-kingsley",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B747472&productid=124527",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    },
+    {
+      "id": "kingsley-door",
+      "name": "Kingsley GRP kiosk single door panel, FRB-DWG-002 revision 3",
+      "measure_ids": [],
+      "material": "GRP",
+      "dimensions": "maximum 1455 × 3500 mm",
+      "dmwd_m": 0.9,
+      "application": "kiosk",
+      "certificate": "KM 747472",
+      "standard": "BS 851188-1",
+      "source_id": "bsi-kingsley",
+      "source_url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B747472&productid=124527",
+      "checked": "2026-11-04",
+      "evidence_class": "Certified laboratory specification",
+      "standard_edition": "Directory states BS 851188-1; edition/amendment not asserted for this entry",
+      "price_gbp": null,
+      "energy_effect": null,
+      "damage_reduction": null,
+      "leakage_rate": null,
+      "limitations": "Exact certified configuration only. Current certificate and installation scope must be rechecked. DMWD is not a safe structural depth or proof of whole-house protection. No leakage value or household outcome inferred."
+    }
+  ],
+  "cases": [
+    {
+      "id": "bewdley-2022",
+      "title": "Bewdley post-installation field study",
+      "kind": "Observed post-flood package outcomes, resident self-report",
+      "source_url": "https://befloodready.ciwem.org/case-study/bewdley-property-flood-resilience-pfr-post-installation-effectiveness-national-learning-may-2022/",
+      "finding": "28 of 29 respondents reported lower flood impact after varied PFR packages.",
+      "limitations": "Selected respondents, uncontrolled packages, no transferable per-product effect or success probability.",
+      "source_file": "data/raw/pfr/bewdley-2022.html",
+      "sha256": "d81f81d5d2010d4a0280612f2fc30b4bbd515dc19287925b05559a670ed14e2c"
+    },
+    {
+      "id": "defra-post-installation",
+      "title": "Defra post-installation effectiveness evaluation",
+      "kind": "Observed scheme evaluation",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6034e365e90e07660e26e9b0/Post-Installation_Effectiveness_of_Property_Level_Flood_Protection__final_report.pdf",
+      "finding": "Operation, maintenance and independent survey quality affect package performance.",
+      "limitations": "Mixed measures and sites; cannot attribute a causal effect to one product."
+    },
+    {
+      "id": "fd2657",
+      "title": "Defra FD2657 property protection appraisal",
+      "kind": "Published modelling",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "finding": "Historical appraisal models protection packages using assigned reliability inputs.",
+      "limitations": "Model assumptions and historical costs are not observed current product outcomes."
+    },
+    {
+      "id": "gas-street",
+      "title": "EA/Defra FloodReady: Gas Street, Sandiacre",
+      "kind": "Documented installation case; no post-flood outcome",
+      "source_url": "https://www.gov.uk/government/publications/floodproof-an-action-plan-to-build-resilience/floodready-an-action-plan-to-build-the-resilience-of-people-and-properties",
+      "finding": "A 53-home affordable housing development added passive PFR during construction after reviewing updated flood risk information.",
+      "limitations": "New-build installation case, not a retrofit effect evaluation or measured avoided loss.",
+      "source_file": "data/raw/validation/ea-floodready.html",
+      "sha256": "985e7020bc0b4b0406660154192b33272b511ff022eb00c303836ff8c6296a33"
+    },
+    {
+      "id": "flood-re-qqr",
+      "title": "Flood Re Quinquenial Review 2024",
+      "kind": "Programme evaluation and cited modelling",
+      "source_url": "https://www.floodre.co.uk/wp-content/uploads/Flood-Re_QQR-2024_Digital.pdf",
+      "finding": "Reports Build Back Better adoption and claims experience, and cites resilient reinstatement research.",
+      "limitations": "Programme uptake and modelled repair costs do not identify causal product performance. No insurance eligibility or grant is inferred.",
+      "source_file": "data/raw/validation/flood-re-qqr2024.pdf",
+      "sha256": "e3ee6ccfdb116c6f9097c69a45f6906c0c9315df740a4a583d9552a1fbd6fec8"
+    }
+  ],
+  "access_limits": {
+    "kiwa": "Official directory/certificate could not be acquired. Caro KA-25-1001 and Buffalo KA-26-1002 appeared in supplier claims only; excluded from verified selectable products.",
+    "epc": "Current official bulk service requires GOV.UK One Login; no certificate/recommendation records acquired in this session."
+  },
+  "classification": [
+    "Certified laboratory specification",
+    "Observed post-flood outcome",
+    "Published modelling",
+    "Authoritative guidance",
+    "Explicit planning assumption"
+  ],
+  "acquisition": {
+    "need-installation-years": {
+      "url": "https://assets.publishing.service.gov.uk/media/6a2828aaf553ec1112221816/Impact_of_measures_installation_year_EW.ods",
+      "path": "data/raw/need/installation-years.ods",
+      "status": "cached",
+      "sha256": "ef08c2c783de80e661ba83d750715aa346ff1480586de5bc79f7f9ad1140c697",
+      "bytes": 187827
+    },
+    "bsi-m3": {
+      "url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B713574&productid=119436",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "source_file": null,
+      "sha256": null
+    },
+    "bsi-kingsley": {
+      "url": "https://www.bsigroup.com/en-GB/products-and-services/assessment-and-certification/validation-and-verification/product-directory-details/?license=KM%2B747472&productid=124527",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "source_file": null,
+      "sha256": null
+    },
+    "epc-guidance": {
+      "url": "https://get-energy-performance-data.communities.gov.uk/guidance/energy-certificate-data-apis",
+      "path": "data/raw/validation/epc-guidance.html",
+      "status": "downloaded",
+      "sha256": "89d14a4d90421ceea9cf4cc241161d3108091e8082c86f8bd2e9e463b97eea85",
+      "bytes": 17847
+    },
+    "flood-re-qqr": {
+      "url": "https://www.floodre.co.uk/wp-content/uploads/Flood-Re_QQR-2024_Digital.pdf",
+      "path": "data/raw/validation/flood-re-qqr2024.pdf",
+      "status": "downloaded",
+      "sha256": "e3ee6ccfdb116c6f9097c69a45f6906c0c9315df740a4a583d9552a1fbd6fec8",
+      "bytes": 19170618
+    },
+    "ea-gas-street": {
+      "url": "https://www.gov.uk/government/publications/floodproof-an-action-plan-to-build-resilience/floodready-an-action-plan-to-build-the-resilience-of-people-and-properties",
+      "path": "data/raw/validation/ea-floodready.html",
+      "status": "downloaded",
+      "sha256": "985e7020bc0b4b0406660154192b33272b511ff022eb00c303836ff8c6296a33",
+      "bytes": 445933
+    },
+    "epc-records": {
+      "status": "not_acquired",
+      "reason": "GOV.UK One Login and authorised download or API token required; no credentials supplied"
+    },
+    "kiwa-records": {
+      "status": "not_acquired",
+      "reason": "Official record unavailable; supplier claims excluded from selectable verified products"
+    }
+  }
+}

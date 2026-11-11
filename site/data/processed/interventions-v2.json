@@ -1,0 +1,644 @@
+[
+  {
+    "id": "survey",
+    "name": "Property flood survey",
+    "description": "Understand the water entry paths before commissioning work.",
+    "cost_low": 350,
+    "cost_base": 600,
+    "cost_high": 1000,
+    "benefit": {
+      "flood": 0,
+      "energy": 0,
+      "comfort": 0
+    },
+    "eligibility": "always",
+    "requires": [],
+    "excludes": [],
+    "category": "Survey",
+    "rationale": "Specialist review is a prerequisite to physical flood measures.",
+    "limitations": "Survey cost depends on scope and access.",
+    "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Assessment",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 400,
+      "central": 450,
+      "high": 500,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Survey",
+      "unit": "survey",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    }
+  },
+  {
+    "id": "barrier",
+    "name": "Removable flood barrier",
+    "description": "A deployable barrier for an assessed entrance.",
+    "cost_low": 400,
+    "cost_base": 850,
+    "cost_high": 1500,
+    "benefit": {
+      "flood": 24,
+      "energy": 0,
+      "comfort": 2
+    },
+    "eligibility": "barrier",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [
+      "flood-door"
+    ],
+    "category": "Flood",
+    "rationale": "Can help limit entry through a compatible opening.",
+    "limitations": "Needs safe deployment, storage and a survey; depth and structural limits apply.",
+    "source_url": "https://www.gov.uk/guidance/adapting-your-home-or-business-to-the-risk-of-flooding",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 500,
+      "central": 700,
+      "high": 900,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Demountable Door Guards",
+      "unit": "per door guard",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    },
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "flood-door",
+    "name": "Passive flood door",
+    "description": "A surveyed entrance upgrade that does not require deployment.",
+    "cost_low": 1600,
+    "cost_base": 2600,
+    "cost_high": 4200,
+    "benefit": {
+      "flood": 30,
+      "energy": 1,
+      "comfort": 4
+    },
+    "eligibility": "ground",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [
+      "barrier"
+    ],
+    "category": "Flood",
+    "rationale": "Passive protection is useful when deployment would be difficult.",
+    "limitations": "Certification, fit, maintenance and structural suitability must be checked.",
+    "source_url": "https://www.gov.uk/guidance/adapting-your-home-or-business-to-the-risk-of-flooding",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 1000,
+      "central": 1500,
+      "high": 2000,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Automatic Door Guards",
+      "unit": "per automatic guard, not necessarily a replacement door",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    },
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "air-bricks",
+    "name": "Self-closing air bricks",
+    "description": "Protect assessed low-level ventilation openings.",
+    "cost_low": 300,
+    "cost_base": 600,
+    "cost_high": 1000,
+    "benefit": {
+      "flood": 15,
+      "energy": 0,
+      "comfort": 0
+    },
+    "eligibility": "air",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [],
+    "category": "Flood",
+    "rationale": "Addresses the air-brick entry paths reported in your profile.",
+    "limitations": "Must maintain ventilation and be suitable for the building.",
+    "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 50,
+      "central": 70,
+      "high": 90,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Self-closing airbrick",
+      "unit": "per airbrick",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    },
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "valve",
+    "name": "Non-return valve",
+    "description": "An assessed valve to reduce drain backflow.",
+    "cost_low": 250,
+    "cost_base": 500,
+    "cost_high": 900,
+    "benefit": {
+      "flood": 13,
+      "energy": 0,
+      "comfort": 0
+    },
+    "eligibility": "ground",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [],
+    "category": "Flood",
+    "rationale": "Addresses an additional possible water entry route.",
+    "limitations": "Drainage survey and maintenance are required; not suitable for all systems.",
+    "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 550,
+      "central": 600,
+      "high": 650,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Non-return valves 110mm soil waste pipe",
+      "unit": "per 110 mm valve",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    },
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "electrics",
+    "name": "Raise electrical services",
+    "description": "Plan higher sockets and circuits during suitable works.",
+    "cost_low": 900,
+    "cost_base": 1800,
+    "cost_high": 3200,
+    "benefit": {
+      "flood": 19,
+      "energy": 0,
+      "comfort": 0
+    },
+    "eligibility": "ground",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [],
+    "category": "Flood",
+    "rationale": "Focuses on recoverability if water enters.",
+    "limitations": "Qualified electrician required; existing wiring affects scope.",
+    "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": {
+      "low": 760,
+      "central": 800,
+      "high": 840,
+      "currency": "GBP",
+      "price_year": 2011,
+      "item": "Move electrics well above likely flood level",
+      "unit": "report whole-property scenario",
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Table 2.1, printed page 9 / PDF page 18",
+      "use": "Historical research reference only; not used as a current installation quote or price range."
+    },
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "flooring",
+    "name": "Recoverable ground flooring",
+    "description": "Use appropriate water-resistant floors during refurbishment.",
+    "cost_low": 2000,
+    "cost_base": 4000,
+    "cost_high": 7000,
+    "benefit": {
+      "flood": 24,
+      "energy": 0,
+      "comfort": 4
+    },
+    "eligibility": "ground",
+    "requires": [
+      "survey"
+    ],
+    "excludes": [],
+    "category": "Flood",
+    "rationale": "Supports recovery rather than promising to keep all water out.",
+    "limitations": "Subfloor drying, moisture and finishes require professional review.",
+    "source_url": "https://www.gov.uk/prepare-for-flooding/protect-your-property",
+    "evidence": "Government guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "river/sea flood"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": null,
+    "applicable_conditions": "Site-specific depth, duration, groundwater, structural and entry-path survey required. Resistance depth design limits must be confirmed; report assumptions at 0.6 m are not a universal safe depth.",
+    "effectiveness_evidence": {
+      "source_url": "https://assets.publishing.service.gov.uk/media/6038e0cad3bf7f03985e129d/Establishing_the_Cost_Effectiveness_of_Property_Flood_Protection_Technical_Report.pdf",
+      "locator": "Sections 2.2\u20132.6; Tables 2.5\u20132.14",
+      "interpretation": "Appraisal model with engineering/expert assumptions, not observed product-specific causal effectiveness. Do not interpret 90%/77% package reliability assumptions as flood-loss reduction.",
+      "numeric_effect": null
+    },
+    "evidence_gaps_url": "https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/property-flood-resilience-evidence-synthesis-and-gap-analysis"
+  },
+  {
+    "id": "retrofit",
+    "name": "Retrofit assessment",
+    "description": "Review fabric, ventilation and heating as one system.",
+    "cost_low": 200,
+    "cost_base": 400,
+    "cost_high": 700,
+    "benefit": {
+      "flood": 0,
+      "energy": 0,
+      "comfort": 0
+    },
+    "eligibility": "always",
+    "requires": [],
+    "excludes": [],
+    "category": "Survey",
+    "rationale": "Prevents choosing fabric and heating upgrades in isolation.",
+    "limitations": "Does not itself deliver an energy saving.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Assessment",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": null
+  },
+  {
+    "id": "loft",
+    "name": "Loft insulation upgrade",
+    "description": "Insulate an accessible private loft with ventilation checks.",
+    "cost_low": 400,
+    "cost_base": 800,
+    "cost_high": 1200,
+    "benefit": {
+      "flood": 0,
+      "energy": 28,
+      "comfort": 20
+    },
+    "eligibility": "loft",
+    "requires": [
+      "retrofit"
+    ],
+    "excludes": [],
+    "category": "Energy",
+    "rationale": "Your profile reports an uninsulated loft.",
+    "limitations": "Damp, access, services and ventilation may change suitability and cost.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Published GOV.UK generic loft/roof cost range \u00a3400\u2013\u00a31,200; \u00a3800 central value is a calculated midpoint, not a quote",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Published NEED group-level matched-control estimate; transfer to this home unvalidated",
+    "published_effect": "Loft Insulation",
+    "historical_cost_reference": null,
+    "cost_source_url": "https://cleanenergy.campaign.gov.uk/insulation/"
+  },
+  {
+    "id": "draught",
+    "name": "Draught proofing & controls",
+    "description": "Target unintended draughts and improve heating control.",
+    "cost_low": 150,
+    "cost_base": 400,
+    "cost_high": 750,
+    "benefit": {
+      "flood": 0,
+      "energy": 13,
+      "comfort": 16
+    },
+    "eligibility": "always",
+    "requires": [
+      "retrofit"
+    ],
+    "excludes": [],
+    "category": "Energy",
+    "rationale": "Offers a relatively small first step toward comfort and efficiency.",
+    "limitations": "Never seal required ventilation; controls depend on heating system.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": null,
+    "energy_quantification": "No matching consumption-effect estimate integrated. Energy benefit is unquantified, not zero in reality; excluded from the empirical gas objective."
+  },
+  {
+    "id": "wall",
+    "name": "Survey-led solid wall insulation",
+    "description": "Assess a suitable insulation system for external walls.",
+    "cost_low": 4500,
+    "cost_base": 8000,
+    "cost_high": 14000,
+    "benefit": {
+      "flood": 0,
+      "energy": 35,
+      "comfort": 24
+    },
+    "eligibility": "solid",
+    "requires": [
+      "retrofit"
+    ],
+    "excludes": [
+      "cavity"
+    ],
+    "category": "Energy",
+    "rationale": "Addresses fabric heat loss in eligible homes.",
+    "limitations": "No cavity or solid-wall suitability is inferred from age; moisture and planning review required.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Published NEED group-level matched-control estimate; wall type must be confirmed",
+    "published_effect": "Solid Wall Insulation",
+    "historical_cost_reference": null
+  },
+  {
+    "id": "heat-pump",
+    "name": "Heat pump & system design",
+    "description": "Assess a low-carbon heating system and emitter changes.",
+    "cost_low": 7500,
+    "cost_base": 11000,
+    "cost_high": 17000,
+    "benefit": {
+      "flood": 0,
+      "energy": 36,
+      "comfort": 19
+    },
+    "eligibility": "heat",
+    "requires": [
+      "retrofit"
+    ],
+    "excludes": [],
+    "category": "Energy",
+    "rationale": "Offers a pathway away from fossil heating where system design supports it.",
+    "limitations": "Heat-loss design, space, noise, emitters and running costs need assessment. No grant deducted.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Illustrative whole-project planning allowance; not a verified quote or source price",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Qualitative guidance; numeric flood/comfort utility remains illustrative",
+    "published_effect": null,
+    "historical_cost_reference": null,
+    "energy_quantification": "No matching consumption-effect estimate integrated. Energy benefit is unquantified, not zero in reality; excluded from the empirical gas objective."
+  },
+  {
+    "id": "cavity",
+    "name": "Survey-led cavity wall insulation",
+    "description": "Assess a suitable unfilled cavity and moisture/exposure conditions before insulating.",
+    "cost_low": 1000,
+    "cost_base": 2000,
+    "cost_high": 3000,
+    "benefit": {
+      "flood": 0,
+      "energy": 35,
+      "comfort": 24
+    },
+    "eligibility": "cavity",
+    "requires": [
+      "retrofit"
+    ],
+    "excludes": [
+      "wall"
+    ],
+    "category": "Energy",
+    "rationale": "Addresses fabric heat loss in eligible homes.",
+    "limitations": "A cavity survey must establish suitability, moisture and wind-driven rain exposure. A reported cavity is not approval to install.",
+    "source_url": "https://energysavingtrust.org.uk/retrofitting-the-uks-housing-stock-to-reach-net-zero/",
+    "evidence": "Energy Saving Trust guidance",
+    "cost_origin": "Published GOV.UK generic cavity-wall cost range \u00a31,000\u2013\u00a33,000; \u00a32,000 central value is a calculated midpoint, not a quote",
+    "benefit_origin": "Author-assumed ordinal proxy; not measured effectiveness",
+    "checked": "2026-11-04",
+    "professional": true,
+    "difficulty": "Professional installation",
+    "property_types": [
+      "terraced",
+      "semi-detached",
+      "detached",
+      "flat"
+    ],
+    "hazards": [
+      "energy/comfort"
+    ],
+    "evidence_quality": "Published NEED group-level matched-control estimate; wall type must be confirmed",
+    "published_effect": "Cavity Wall Insulation",
+    "historical_cost_reference": null,
+    "cost_source_url": "https://cleanenergy.campaign.gov.uk/insulation/"
+  }
+]

@@ -1,0 +1,21 @@
+HomeResilience AI — third-party notices
+
+Flood data and map imagery: © Environment Agency copyright and/or database
+right 2025. Energy data: contains Department for Energy Security and Net Zero
+information © Crown copyright. These public sector sources are used under the
+Open Government Licence v3.0:
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+The York analysis-layer source URLs and checksums are in
+data/processed/flood/manifest.json.
+
+The unmodified Pyodide 0.29.3 browser runtime is supplied under MPL 2.0.
+Corresponding source: https://github.com/pyodide/pyodide/tree/0.29.3
+License: runtime/LICENSE
+Upstream binary distribution: https://cdn.jsdelivr.net/pyodide/v0.29.3/full/
+
+The bundled CPython standard library is supplied under the PSF terms.
+Source: https://github.com/python/cpython/tree/v3.13.2
+License: runtime/LICENSE-CPython.txt
+
+Product and evidence source references do not grant rights to third-party
+documents, directories, products, certification marks or trademarks.

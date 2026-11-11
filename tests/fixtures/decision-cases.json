@@ -1,0 +1,80 @@
+[
+  {
+    "id": "starter",
+    "name": "A smaller first step",
+    "input_status": "Realistic synthetic demonstration assumptions, not an observed household. Locations query real EA area geometry.",
+    "payload": {
+      "property": {
+        "property_type": "terraced",
+        "age": "pre-1919",
+        "area": 80,
+        "epc": "E",
+        "ground_floor": true,
+        "loft_uninsulated": true,
+        "air_bricks": true,
+        "listed": false,
+        "can_deploy": true,
+        "heating": "gas",
+        "wall_type": "solid",
+        "terrace_position": "mid",
+        "need_age": "1"
+      },
+      "profile_origin": "demo",
+      "budget": 2000,
+      "lon": -1.08,
+      "lat": 53.95
+    }
+  },
+  {
+    "id": "family",
+    "name": "Balance flood & energy",
+    "input_status": "Realistic synthetic demonstration assumptions, not an observed household. Locations query real EA area geometry.",
+    "payload": {
+      "property": {
+        "property_type": "semi-detached",
+        "age": "1919-1980",
+        "area": 110,
+        "epc": "D",
+        "ground_floor": true,
+        "loft_uninsulated": true,
+        "air_bricks": true,
+        "listed": false,
+        "can_deploy": false,
+        "heating": "gas",
+        "wall_type": "cavity",
+        "need_age": "2"
+      },
+      "profile_origin": "demo",
+      "budget": 10000,
+      "lon": -1.1,
+      "lat": 53.965
+    }
+  },
+  {
+    "id": "long-term",
+    "name": "Plan for the long term",
+    "input_status": "Realistic synthetic demonstration assumptions, not an observed household. Locations query real EA area geometry.",
+    "payload": {
+      "property": {
+        "property_type": "detached",
+        "age": "post-1980",
+        "area": 160,
+        "epc": "C",
+        "ground_floor": true,
+        "loft_uninsulated": false,
+        "air_bricks": false,
+        "listed": false,
+        "can_deploy": true,
+        "heating": "oil",
+        "need_age": "3",
+        "wall_type": "insulated",
+        "flood_depth_m": 0.8
+      },
+      "profile_origin": "demo",
+      "budget": 25000,
+      "lon": -1.11,
+      "lat": 53.972
+    },
+    "depth_input_origin": "Synthetic 0.8m design-depth stress assumption, not an EA property-level estimate."
+  }
+]

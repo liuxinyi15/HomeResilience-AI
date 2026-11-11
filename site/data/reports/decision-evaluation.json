@@ -1,0 +1,204 @@
+{
+  "summary": {
+    "runs": 81,
+    "method_comparisons": 729,
+    "constraint_violations": 0,
+    "oracle_failures": 0,
+    "dominated_recommendations": 9,
+    "incorrect_pareto_claims": 0,
+    "nominal_dominance_note": "Global minimax alternatives may be dominated under the currently selected nominal scenario; their Pareto status is explicitly false. They trade nominal objectives for across-scenario robustness.",
+    "seconds": 130.67
+  },
+  "source_checks": {
+    "grouped_cells": 87,
+    "available_cells": 72,
+    "suppressed_cells": 15,
+    "fraction_quartiles_span_zero": 67,
+    "available_quartile_groups": 72,
+    "headline_median_fraction_abs_errors": {
+      "loft": 0.0,
+      "cavity": 0.0,
+      "solid": 0.0
+    }
+  },
+  "installation_year_variation": {
+    "solid": [
+      {
+        "installation_year": 2011,
+        "median_fraction": 0.162781161328447
+      },
+      {
+        "installation_year": 2012,
+        "median_fraction": 0.181290841171163
+      },
+      {
+        "installation_year": 2013,
+        "median_fraction": 0.112142685991167
+      },
+      {
+        "installation_year": 2014,
+        "median_fraction": 0.138687553036136
+      },
+      {
+        "installation_year": 2015,
+        "median_fraction": 0.147951682428803
+      },
+      {
+        "installation_year": 2016,
+        "median_fraction": 0.156211867141746
+      },
+      {
+        "installation_year": 2017,
+        "median_fraction": 0.191126798756264
+      },
+      {
+        "installation_year": 2018,
+        "median_fraction": 0.186652302420573
+      },
+      {
+        "installation_year": 2019,
+        "median_fraction": 0.182140475999074
+      },
+      {
+        "installation_year": 2020,
+        "median_fraction": 0.13086773708089
+      },
+      {
+        "installation_year": 2021,
+        "median_fraction": 0.0933313753025921
+      },
+      {
+        "installation_year": 2022,
+        "median_fraction": 0.156107666964797
+      },
+      {
+        "installation_year": 2023,
+        "median_fraction": 0.172758601491735
+      }
+    ],
+    "cavity": [
+      {
+        "installation_year": 2011,
+        "median_fraction": 0.0836093493316884
+      },
+      {
+        "installation_year": 2012,
+        "median_fraction": 0.0773068879211403
+      },
+      {
+        "installation_year": 2013,
+        "median_fraction": 0.0611469030631629
+      },
+      {
+        "installation_year": 2014,
+        "median_fraction": 0.08422568921195
+      },
+      {
+        "installation_year": 2015,
+        "median_fraction": 0.0807932926642169
+      },
+      {
+        "installation_year": 2016,
+        "median_fraction": 0.0783132469774973
+      },
+      {
+        "installation_year": 2017,
+        "median_fraction": 0.0773607733911687
+      },
+      {
+        "installation_year": 2018,
+        "median_fraction": 0.0892363850568007
+      },
+      {
+        "installation_year": 2019,
+        "median_fraction": 0.102919423165785
+      },
+      {
+        "installation_year": 2020,
+        "median_fraction": 0.0941045243006575
+      },
+      {
+        "installation_year": 2021,
+        "median_fraction": 0.080638502295607
+      },
+      {
+        "installation_year": 2022,
+        "median_fraction": 0.0779234470809589
+      },
+      {
+        "installation_year": 2023,
+        "median_fraction": 0.119819792291204
+      }
+    ],
+    "loft": [
+      {
+        "installation_year": 2011,
+        "median_fraction": 0.0248682901128586
+      },
+      {
+        "installation_year": 2012,
+        "median_fraction": 0.0248652643161245
+      },
+      {
+        "installation_year": 2013,
+        "median_fraction": 0.0175053670811122
+      },
+      {
+        "installation_year": 2014,
+        "median_fraction": 0.034316086457854
+      },
+      {
+        "installation_year": 2015,
+        "median_fraction": 0.0259437824039256
+      },
+      {
+        "installation_year": 2016,
+        "median_fraction": 0.014346975207626
+      },
+      {
+        "installation_year": 2017,
+        "median_fraction": 0.0451507101144802
+      },
+      {
+        "installation_year": 2018,
+        "median_fraction": 0.0347238129992739
+      },
+      {
+        "installation_year": 2019,
+        "median_fraction": 0.0308753518554087
+      },
+      {
+        "installation_year": 2020,
+        "median_fraction": 0.0288520161059979
+      },
+      {
+        "installation_year": 2021,
+        "median_fraction": 0.0242582842425937
+      },
+      {
+        "installation_year": 2022,
+        "median_fraction": 0.0294324560043041
+      },
+      {
+        "installation_year": 2023,
+        "median_fraction": 0.0321169156666163
+      }
+    ]
+  },
+  "model_evaluation": {
+    "task": "Published adjusted-group estimator and constrained decision engine; no new individual prediction labels",
+    "metrics": "Source-cell agreement, suppression preservation, constraints, exact optimality, nondominance, scenario stability and regret",
+    "individual_effect_error": null,
+    "causal_validation": null,
+    "personal_interval_coverage": null,
+    "reason": "Public grouped tables do not provide independent individual counterfactual outcomes. Dispersion percentiles are not confidence or prediction intervals."
+  },
+  "input_sha256": "cfcc1b1676b834eedebecacb248d3fe4875b256116e04c4f5356314079cbc5fd",
+  "evidence_sha256": "1dfc07e007bab6da1357393f5d6abf95d94bf09ab9831ba7ee3a4d1b7fd06c5b",
+  "limitations": [
+    "Cases are realistic synthetic inputs, not observed households or measured savings.",
+    "Oracle independently checks enumeration/constraints/selection but shares stated benefit assumptions; not independent real-world validation.",
+    "Nine stress assumptions are not a probabilistic uncertainty model.",
+    "No lifecycle carbon, monetary damage, future bill or causal household saving model."
+  ]
+}

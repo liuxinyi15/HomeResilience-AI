@@ -71,3 +71,17 @@ Team details to be added by the project team.
 ## Competition
 
 TCS Sustainathon UKI 2026 · Competition demo and portfolio release.
+
+## License & Competition Notice
+
+**Copyright © 2026 HomeResilience AI Contributors. All rights reserved.**
+
+This project was developed for TCS Sustainathon UKI 2026.
+
+The repository and live demonstration are publicly accessible for evaluation and portfolio purposes.
+
+**The project is not currently open source.** Reuse, modification, redistribution, or incorporation of its protected materials into other competition submissions is not permitted without prior written authorisation.
+
+The team may consider open-source licensing following the conclusion of the competition.
+
+See [LICENSE](LICENSE) for details.

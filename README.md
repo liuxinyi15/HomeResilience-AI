@@ -2,9 +2,8 @@
 
 Decision support for households planning, funding and tracking flood resilience and energy improvements.
 
-**Live demo:** [HomeResilience AI demo website](https://liuxinyi15.github.io/HomeResilience-AI/). 
+**Live demo:** [HomeResilience AI demo website](https://liuxinyi15.github.io/HomeResilience-AI/)
 
-[Run the same demo locally](#run-locally).
 
 ![Emma’s recommendations in the HomeResilience AI planner](screenshots/02-recommendations.png)
 

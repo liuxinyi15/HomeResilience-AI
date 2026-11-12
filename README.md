@@ -2,7 +2,9 @@
 
 Decision support for households planning, funding and tracking flood resilience and energy improvements.
 
-**Live demo:** [HomeResilience AI demo website](https://liuxinyi15.github.io/HomeResilience-AI/). [Run the same demo locally](#run-locally).
+**Live demo:** [HomeResilience AI demo website](https://liuxinyi15.github.io/HomeResilience-AI/). 
+
+[Run the same demo locally](#run-locally).
 
 ![Emma’s recommendations in the HomeResilience AI planner](screenshots/02-recommendations.png)
 
@@ -50,9 +52,6 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 
 Use a modern browser with WebAssembly, Web Workers and gzip streams. Python serves files only; no packages, credentials or external requests are required to use the demo. The first load downloads the bundled calculation runtime and York data. Opening `site/index.html` as a file bypasses HTTP and will not work.
 
-## Deployment
-
-In GitHub, open **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. Run **Deploy HomeResilience AI to GitHub Pages** from the **Actions** tab on `main` for the first deployment. Later pushes to `main` deploy automatically. The workflow verifies and publishes only `site/`. Copy the deployment URL from **Settings → Pages** into the Live demo line above. [GitHub Pages setup guide](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## Repository structure
 

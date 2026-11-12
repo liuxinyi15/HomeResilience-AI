@@ -1,4 +1,4 @@
-# HomeResilience AI ![HomeResilience Logo](logo.png)
+# HomeResilience AI <img src="logo.png" alt="Logo" height="65">
 
 Decision support for households planning, funding and tracking flood resilience and energy improvements.
 

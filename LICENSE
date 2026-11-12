@@ -1,0 +1,63 @@
+# HomeResilience AI — Competition Restricted License
+
+Copyright (c) 2026 HomeResilience AI Contributors. All rights reserved.
+
+## 1. Purpose
+
+HomeResilience AI was developed as part of the TCS Sustainathon UKI 2026 competition.
+
+The source code and related original materials are made publicly accessible solely for project demonstration, evaluation, and portfolio purposes.
+
+**Public availability does not constitute an open-source licence or permission to reuse the project.**
+
+## 2. Permitted Activities
+
+Subject to this licence, individuals may:
+
+- View the publicly accessible repository and its contents.
+- Access and interact with the publicly hosted demonstration.
+- Review the project for educational, recruitment, or competition evaluation purposes.
+
+These permissions do not grant rights to reproduce, modify, redistribute, or incorporate protected project materials into other projects.
+
+## 3. Restrictions During the Competition
+
+Until the official conclusion of TCS Sustainathon UKI 2026, unless prior written permission is obtained from the relevant copyright holders, the following activities are prohibited:
+
+- Copying, modifying, redistributing, sublicensing, or republishing the project's original source code.
+- Incorporating substantial portions of the implementation into another application or submission.
+- Using the project's original code, designs, documentation, or other protected materials in another competition or hackathon.
+- Creating or distributing derivative works based on the project's protected materials.
+- Commercially exploiting the project's original implementation.
+
+These restrictions apply only to materials over which the contributors hold the necessary rights and are subject to applicable law and any overriding third-party licences.
+
+## 4. Post-Competition Licensing
+
+The conclusion of the competition does not automatically grant additional permissions.
+
+Following the official conclusion of TCS Sustainathon UKI 2026, the copyright holders may elect to release all or part of the project under a separate open-source licence.
+
+Until such a licence is expressly published, all rights remain reserved.
+
+## 5. Third-Party Materials
+
+Third-party libraries, datasets, frameworks, and assets remain subject to their respective licences and terms.
+
+This licence does not override any rights granted under those licences.
+
+## 6. Ownership
+
+All rights to the contributors' original work remain with their respective copyright holders, subject to any applicable competition agreements.
+
+No ownership or intellectual property rights are transferred by access to the repository or demonstration.
+
+## 7. Disclaimer
+
+THE SOFTWARE AND MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+## 8. Permissions
+
+For permission to reuse, modify, distribute, or otherwise license protected project materials, contact the project maintainers through the GitHub repository.
+
+**All rights reserved. Unauthorised reuse is prohibited except where permitted by applicable law or an existing licence.**

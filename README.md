@@ -66,7 +66,8 @@ Use a modern browser with WebAssembly, Web Workers and gzip streams. Python serv
 
 ## Team
 
-Team details to be added by the project team.
+- **Xinyi LIU** — Data Science for Responsible Business, emlyon business school & École Centrale de Lyon (Exchange: University of Birmingham)
+- **Yujia LI** — Geography, University College London (UCL)
 
 ## Competition
 

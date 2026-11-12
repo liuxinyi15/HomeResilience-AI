@@ -1,9 +1,8 @@
-# HomeResilience AI
+# HomeResilience AI ![HomeResilience Logo](logo.png)
 
 Decision support for households planning, funding and tracking flood resilience and energy improvements.
 
 **Live demo:** [HomeResilience AI demo website](https://liuxinyi15.github.io/HomeResilience-AI/)
-
 
 ![Emma’s recommendations in the HomeResilience AI planner](screenshots/02-recommendations.png)
 
